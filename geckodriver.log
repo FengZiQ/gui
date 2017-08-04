@@ -1,0 +1,52 @@
+1501743445299	geckodriver	INFO	Listening on 127.0.0.1:63362
+1501743447281	geckodriver::marionette	INFO	Starting browser D:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+[GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd32 v= and igd10iumd32 v=
+1501743454415	Marionette	INFO	Listening on port 63369
+1501743455365	Marionette	WARN	TLS certificate errors will be ignored for this session
+1501743491015	Marionette	INFO	New connections will no longer be accepted
+ Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1501569165302	Marionette	INFO	New connections will no longer be accepted
+_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+1499420644714	Marionette	INFO	Ceased listening
+nt/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 32: Error: 2147500034
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+JavaScript error: chrome://pippki/content/exceptionDialog.js, line 328: NS_ERROR_XPC_GS_RETURNED_FAILURE: Component returned failure code: 0x80570016 (NS_ERROR_XPC_GS_RETURNED_FAILURE) [nsIJSCID.getService]
+1499409440817	Marionette	INFO	Ceased listening

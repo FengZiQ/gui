@@ -1,0 +1,1085 @@
+User Database
+Pass: Upload button is disabled
+Pass: Next Settings button is disabled
+Configuration Script
+Pass: Upload button is disabled
+Pass: Next Settings button is disabled
+
+<font color="green">Pass</font>
+'result': 'p'
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Pool0           
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Pool0           
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Pool0           
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Pool0           
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+Pass: Create New Pool button is disabled
+Fail: Delete button is enabled
+Fail: Extend Pool button is enabled
+Pass: Global Settings button is disabled
+Pass: View Detail option can be selected
+Pass: Delete option can not be selected
+Pass: Extend Pool option can not be selected
+
+<font color="red">Fail: View user permissions is failed on pool page </font>
+'result': 'f'
+pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    Ptestbbm                    199.61 GB 35.08 GB  164.53 GB OK              
+
+administrator@cli> 
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Pool0           
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Pool0           
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    Vtestlunmap1          0      1 GB        1 GB        Exported    OK       
+1    Vtestlunmap2          0      1 GB        1 GB        Exported    OK       
+2    Vtestlunmap3          0      1 GB        1 GB        Exported    OK       
+3    Vtestlunmap4          0      1 GB        1 GB        Exported    OK       
+4    Vtestlunmap5          0      1 GB        1 GB        Exported    OK       
+5    Vtestlunmap6          0      1 GB        1 GB        Exported    OK       
+6    Vtestlunmap7          0      1 GB        1 GB        Exported    OK       
+7    Vtestlunmap8          0      1 GB        1 GB        Exported    OK       
+8    Vtestlunmap9          0      1 GB        1 GB        Exported    OK       
+9    Vtestlunmap10         0      1 GB        1 GB        Exported    OK       
+10   Vtestlunmap11         0      1 GB        1 GB        Exported    OK       
+11   Vtestlunmap12         0      1 GB        1 GB        Exported    OK       
+12   Vtestlunmap13         0      1 GB        1 GB        Exported    OK       
+13   Vtestlunmap14         0      1 GB        1 GB        Exported    OK       
+14   Vtestlunmap15         0      1 GB        1 GB        Exported    OK       
+15   Vtestlunmap16         0      1 GB        1 GB        Exported    OK       
+16   Vtestlunmap17         0      1 GB        1 GB        Exported    OK       
+17   Vtestlunmap18         0      1 GB        1 GB        Exported    OK       
+18   Vtestlunmap19         0      1 GB        1 GB        Exported    OK       
+19   Vtestlunmap20         0      1 GB        1 GB        Exported    OK       
+20   Vtestlunmap21         0      1 GB        1 GB        Exported    OK       
+21   Vtestlunmap22         0      1 GB        1 GB        Exported    OK       
+22   Vtestlunmap23         0      1 GB        1 GB        Exported    OK       
+23   Vtestlunmap24         0      1 GB        1 GB        Exported    OK       
+24   Vtestlunmap25         0      1 GB        1 GB        Exported    OK       
+25   Vtestlunmap26         0      1 GB        1 GB        Exported    OK       
+26   Vtestlunmap27         0      1 GB        1 GB        Exported    OK       
+27   Vtestlunmap28         0      1 GB        1 GB        Exported    OK       
+28   Vtestlunmap29         0      1 GB        1 GB        Exported    OK       
+29   Vtestlunmap30         0      1 GB        1 GB        Exported    OK       
+30   Vtestlunmap31         0      1 GB        1 GB        Exported    OK       
+31   Vtestlunmap32         0      1 GB        1 GB        Exported    OK       
+32   Vtestlunmap33         0      1 GB        1 GB        Exported    OK       
+33   Vtestlunmap34         0      1 GB        1 GB        Exported    OK       
+
+administrator@cli> 
+Pass: Create New Volume button is disabled
+Fail: Delete button is enabled
+Pass: Export button is disabled
+Fail: Un-export button is enabled
+Pass: View option Detail can be selected
+Pass: Delete option can not be selected
+Pass: Un-Exported option can not be selected
+Pass: Snapshot & Clone option can be selected
+
+<font color="red">Fail: View user permissions is failed on volume page </font>
+'result': 'f'
+pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    Ptestbbm                    199.61 GB 35.08 GB  164.53 GB OK              
+
+administrator@cli> 
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Unconfigured    
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+pool -a add -s "name=TestViewUserPP,raid=0" -p 1
+
+administrator@cli> 
+volume
+No volume exists
+
+administrator@cli> 
+pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    TestViewUserPP              1.83 TB   97.28 KB  1.83 TB   OK              
+
+administrator@cli> 
+volume -a add -s "name=TestViewUserPV,capacity=10GB" -p 0
+
+administrator@cli> 
+snapshot
+No snapshot exists
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot -a add -t volume -s "name=TestViewUserPS" -d 0
+
+administrator@cli> 
+clone
+No clone found
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone -a add -s "name=TestViewUserPC" -d 0
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Fail: View Clone option can not be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    TestViewUserPP              1.83 TB   10.32 GB  1.82 TB   OK              
+
+administrator@cli> 
+pool -a del -i 0 -f
+Do you want to delete the pool? (y|n):Do you want to delete the pool? (y|n):
+
+administrator@cli> 
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Unconfigured    
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+pool -a add -s "name=TestViewUserPP,raid=0" -p 1
+
+administrator@cli> 
+volume
+No volume exists
+
+administrator@cli> 
+pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    TestViewUserPP              1.83 TB   98.82 KB  1.83 TB   OK              
+
+administrator@cli> 
+volume -a add -s "name=TestViewUserPV,capacity=10GB" -p 0
+
+administrator@cli> 
+snapshot
+No snapshot exists
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot -a add -t volume -s "name=TestViewUserPS" -d 0
+
+administrator@cli> 
+clone
+No clone found
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone -a add -s "name=TestViewUserPC" -d 0
+
+administrator@cli> 
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone
+===============================================================================
+Id   Name            Type       SrcId TotalCap   UsedCap    Status     OpStatus
+===============================================================================
+0    TestViewUserPC  volume     0     10 GB      1.02 KB    Exported   OK      
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Fail: View Clone option can not be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    TestViewUserPP              1.83 TB   10.32 GB  1.82 TB   OK              
+
+administrator@cli> 
+pool -a del -i 0 -f
+Do you want to delete the pool? (y|n):Do you want to delete the pool? (y|n):
+
+administrator@cli> 
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Unconfigured    
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+pool -a add -s "name=TestViewUserPP,raid=0" -p 1
+
+administrator@cli> 
+volume
+No volume exists
+
+administrator@cli> 
+pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    TestViewUserPP              1.83 TB   98.82 KB  1.83 TB   OK              
+
+administrator@cli> 
+volume -a add -s "name=TestViewUserPV,capacity=10GB" -p 0
+
+administrator@cli> 
+snapshot
+No snapshot exists
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot -a add -t volume -s "name=TestViewUserPS" -d 0
+
+administrator@cli> 
+clone
+No clone found
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone -a add -s "name=TestViewUserPC" -d 0
+
+administrator@cli> 
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone
+===============================================================================
+Id   Name            Type       SrcId TotalCap   UsedCap    Status     OpStatus
+===============================================================================
+0    TestViewUserPC  volume     0     10 GB      1.02 KB    Exported   OK      
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Fail: View Clone option can not be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone
+===============================================================================
+Id   Name            Type       SrcId TotalCap   UsedCap    Status     OpStatus
+===============================================================================
+0    TestViewUserPC  volume     0     10 GB      1.02 KB    Exported   OK      
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Fail: View Clone option can not be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone
+===============================================================================
+Id   Name            Type       SrcId TotalCap   UsedCap    Status     OpStatus
+===============================================================================
+0    TestViewUserPC  volume     0     10 GB      1.02 KB    Exported   OK      
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Fail: View Clone option can not be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone
+===============================================================================
+Id   Name            Type       SrcId TotalCap   UsedCap    Status     OpStatus
+===============================================================================
+0    TestViewUserPC  volume     0     10 GB      1.02 KB    Exported   OK      
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Fail: View Clone option can not be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone
+===============================================================================
+Id   Name            Type       SrcId TotalCap   UsedCap    Status     OpStatus
+===============================================================================
+0    TestViewUserPC  volume     0     10 GB      1.02 KB    Exported   OK      
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Fail: View Clone option can not be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone
+===============================================================================
+Id   Name            Type       SrcId TotalCap   UsedCap    Status     OpStatus
+===============================================================================
+0    TestViewUserPC  volume     0     10 GB      1.02 KB    Exported   OK      
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Fail: View Clone option can not be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     0 Byte     Un-Exported OK         
+
+administrator@cli> 
+clone
+===============================================================================
+Id   Name            Type       SrcId TotalCap   UsedCap    Status     OpStatus
+===============================================================================
+0    TestViewUserPC  volume     0     10 GB      1.02 KB    Exported   OK      
+
+administrator@cli> 
+Pass: Create Snapshot button is disabled
+Fail: Create Clone button is enabled
+Fail: Delete Snapshot button is enabled
+Fail: Delete Clone button is enabled
+Snapshot gear
+Pass: Create Snapshot option can not be selected
+Pass: View Detail option can be selected
+Pass: Modify Snapshot option Detail can not be selected
+Pass: Rollback option can not be selected
+Pass: Delete Snapshot option can not be selected
+Pass: Exported Snapshot option can not be selected
+Clone gear
+Pass: View Clone option can be selected
+Fail: Modify Clone Detail option can be selected
+Pass: Delete Clone option can not be selected
+
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+'result': 'f'
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+View user modify display name
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
+View user modify display name
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
+View user change password
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
+View user change password
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
+View user change password
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
+View user change password
+Pass: View user change password successfully
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
+View user change password
+Pass: View user change password successfully
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
+View user change password
+Pass: View user change password successfully
+View user modify display name
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
+View user change password
+Pass: View user change password successfully
+View user modify display name
+Fail: View user doesn't modify display name
+Pass: Change Password button is enabled
+Pass: Modify button is enabled
+Pass: Delete button is disabled
+Pass: Add New User button is disabled
+Fail: Change Password option can not be selected
+Fail: Modify option can not be selected
+Pass: Delete option can not be selected
+Pass: Event Subscription option can be selected
+View user change password
+Pass: View user can change password successfully
+View user modify display name
+Fail: View user can not modify display name
+Fail: View user can not set Event Subscription
+
+<font color="red">Fail: View user permissions is failed on User page </font>
+'result': 'f'
