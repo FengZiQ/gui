@@ -11,7 +11,30 @@ def createPool(c):
         for i in range(4, len(row)-2):
             if len(row[i].split()) >= 9 and "Unconfigured" in row[i]:
                 PDId.append(row[i].split()[0])
+
         SendCmd(c, 'pool -a add -s "name=TestViewUserPP,raid=0" -p ' + PDId[0])
+
+def createSpare(c):
+    PDInfo = SendCmd(c, 'phydrv')
+    PDId = []
+    row = PDInfo.split('\r\n')
+    if "Global Spare" not in PDInfo:
+        for i in range(4, len(row)-2):
+            if len(row[i].split()) >= 9 and "Unconfigured" in row[i]:
+                PDId.append(row[i].split()[0])
+
+        SendCmd(c, 'spare -a add -t g -r y -p ' + PDId[0])
+
+def createReadCache(c):
+    PDInfo = SendCmd(c, 'phydrv')
+    PDId = []
+    row = PDInfo.split('\r\n')
+    if "ReadCache" not in PDInfo:
+        for i in range(4, len(row)-2):
+            if len(row[i].split()) >= 9 and "Unconfigured" in row[i]:
+                PDId.append(row[i].split()[0])
+
+        SendCmd(c, 'rcache -a add -p ' + PDId[0])
 
 def createVolume(c):
     VMInfo = SendCmd(c, 'volume')

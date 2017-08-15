@@ -1,3 +1,612 @@
+2017-08-15 09:31:17: rcache -a del -p 3
+
+administrator@cli> 
+2017-08-15 09:31:16: phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Unconfigured    
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         ReadCache       
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+2017-08-15 09:31:16: spare -a del -i 0
+
+administrator@cli> 
+2017-08-15 09:31:16: pool -a del -i 0 -f
+Do you want to delete the pool? (y|n):Do you want to delete the pool? (y|n):
+
+administrator@cli> 
+2017-08-15 09:31:15: pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    TestViewUserPP              1.83 TB   98.82 KB  1.83 TB   OK              
+
+administrator@cli> 
+2017-08-15 09:31:15: 'result': 'f'
+2017-08-15 09:31:15: 
+<font color="red">Fail: View user permissions is failed on pool page </font>
+2017-08-15 09:31:15: Pass: Delete option can not be selected
+2017-08-15 09:31:15: Pass: View option can  be selected
+2017-08-15 09:31:12: Fail: Delete button is enabled
+2017-08-15 09:31:12: Pass: View button is enabled
+2017-08-15 09:31:12: Pass: Create Spare Drive button is disabled
+2017-08-15 09:31:07: Verify Spare Drive page permissions
+2017-08-15 09:31:07: Pass: Delete option can not be selected
+2017-08-15 09:31:07: Pass: Modify option can not be selected
+2017-08-15 09:31:04: Pass: Delete button is disabled
+2017-08-15 09:31:04: Pass: Modify button is disabled
+2017-08-15 09:31:04: Pass: Create Cache button is disabled
+2017-08-15 09:30:59: Verify Cache page permissions
+2017-08-15 09:30:59: Pass: Extend Pool option can not be selected
+2017-08-15 09:30:59: Pass: Delete option can not be selected
+2017-08-15 09:30:59: Pass: View Detail option can be selected
+2017-08-15 09:30:56: Fail: Global Settings button is enabled
+2017-08-15 09:30:55: Pass: Extend Pool button is disabled
+2017-08-15 09:30:55: Fail: Delete button is enabled
+2017-08-15 09:30:55: Pass: Create New Pool button is disabled
+2017-08-15 09:30:50: Verify pool page permissions
+2017-08-15 09:30:47: rcache -a add -p 3
+
+administrator@cli> 
+2017-08-15 09:30:42: phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Revert Global   
+     A330                                                      Spare           
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+2017-08-15 09:30:42: spare -a add -t g -r y -p 2
+
+administrator@cli> 
+2017-08-15 09:30:41: phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+2017-08-15 09:30:41: pool -a add -s "name=TestViewUserPP,raid=0" -p 1
+
+administrator@cli> 
+2017-08-15 09:30:39: phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Unconfigured    
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Unconfigured    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Unconfigured    
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+2017-08-14 11:11:16: pool -a del -i 0 -f
+Do you want to delete the pool? (y|n):Do you want to delete the pool? (y|n):
+
+administrator@cli> 
+2017-08-14 11:11:15: pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    TestViewUserPP              1.83 TB   98.82 KB  1.83 TB   OK              
+
+administrator@cli> 
+2017-08-14 11:11:15: 'result': 'f'
+2017-08-14 11:11:15: 
+<font color="red">Fail: View user permissions is failed on pool page </font>
+2017-08-14 11:11:15: Pass: Extend Pool option can not be selected
+2017-08-14 11:11:15: Pass: Delete option can not be selected
+2017-08-14 11:11:15: Pass: View Detail option can be selected
+2017-08-14 11:11:12: Fail: Global Settings button is enabled
+2017-08-14 11:11:12: Pass: Extend Pool button is disabled
+2017-08-14 11:11:12: Fail: Delete button is enabled
+2017-08-14 11:11:12: Pass: Create New Pool button is disabled
+2017-08-14 11:11:03: pool -a add -s "name=TestViewUserPP,raid=0" -p 1
+
+administrator@cli> 
+2017-08-14 11:11:01: phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Unconfigured    
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Global Spare    
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         ReadCache       
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Unconfigured    
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Unconfigured    
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Unconfigured    
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Unconfigured    
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Unconfigured    
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Unconfigured    
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Unconfigured    
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Unconfigured    
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Unconfigured    
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Unconfigured    
+
+administrator@cli> 
+2017-08-14 09:31:44: ISNS
+2017-08-14 09:31:44: Pass: Target-Modify button is disabled
+2017-08-14 09:31:41: Target
+2017-08-14 09:31:41: ISCSI Management
+2017-08-14 09:31:35: chap
+-------------------------------------------------------------------------------
+ChapId: 0 (Peer) Name: TestInitiator
+
+administrator@cli> 
+2017-08-14 09:31:18: 'result': 'f'
+2017-08-14 09:31:18: 
+<font color="red">Fail: View user permissions is failed on Device_FCManagement page </font>
+2017-08-14 09:31:18: Fail: SFP-View button is disabled
+2017-08-14 09:31:16: SFP
+2017-08-14 09:31:16: Pass: Device on Fabric-Add to Initiator List button is disabled
+2017-08-14 09:31:14: Device on Fabric
+2017-08-14 09:31:14: Pass: Logged In Device-Add to Initiator List button is disabled
+2017-08-14 09:31:13: Logged In Device
+2017-08-14 09:31:13: Pass: Statistics-Clear option can not be selected
+2017-08-14 09:31:13: Pass: Statistics-View option can be selected
+2017-08-14 09:31:10: Pass: Statistics-Clear button is disabled
+2017-08-14 09:31:10: Pass: Statistics-View button is enabled
+2017-08-14 09:31:05: Statistics
+2017-08-14 09:31:05: Pass: FCPort-Ping option can not be selected
+2017-08-14 09:31:05: Pass: FCPort-Reset option can not be selected
+2017-08-14 09:31:05: Pass: FCPort-Modify option can not be selected
+2017-08-14 09:31:05: Pass: FCPort-View option can be selected
+2017-08-14 09:31:01: Pass: FCPort-Ping Button is disabled
+2017-08-14 09:31:01: Pass: FCPort-Reset Button is disabled
+2017-08-14 09:31:01: Pass: FCPort-Modify button is disabled
+2017-08-14 09:31:01: Pass: FCPort-View button is enabled
+2017-08-14 09:30:57: port
+2017-08-14 09:30:57: Pass: Node list can be opened
+2017-08-14 09:30:54: FC Management
+2017-08-14 09:30:04: Pass: Portal-Delete button is disabled
+2017-08-14 09:30:04: Pass: Portal-Modify button is disabled
+2017-08-14 09:30:04: Pass: Portal-View button is enabled
+2017-08-14 09:28:55: Portal
+2017-08-14 09:28:55: Pass: Port2-Ping option can not be selected
+2017-08-14 09:28:55: Pass: Port2-Modify option can not be selected
+2017-08-14 09:28:55: Pass: Port2-View Detail option can be selected
+2017-08-14 09:28:51: IO Port 2
+2017-08-14 09:28:51: Pass: Port1-Ping option can not be selected
+2017-08-14 09:28:51: Pass: Port1-Modify option can not be selected
+2017-08-14 09:28:51: Pass: Port1-View Detail option can be selected
+2017-08-14 09:28:47: Pass: Port-Ping button is disabled
+2017-08-14 09:28:47: Pass: Port-Modify button is disabled
+2017-08-14 09:28:47: Fail: Port-View button is disabled
+2017-08-14 09:28:42: IO Port 1
+2017-08-14 09:28:42: Pass: Physical Management Ports IPv6-Disable option can not be selected
+2017-08-14 09:28:42: Pass: Physical Management Ports IPv6-Modify option can not be selected
+2017-08-14 09:28:42: Pass: Physical Management Ports IPv6-View Detail option can be selected
+2017-08-14 09:28:37: Physical Management Ports IPv6
+2017-08-14 09:28:37: Pass: Physical Management Ports IPv4-Disable option can not be selected
+2017-08-14 09:28:37: Pass: Physical Management Ports IPv4-Modify option can not be selected
+2017-08-14 09:28:37: Pass: Physical Management Ports IPv4-View Detail option can be selected
+2017-08-14 09:28:34: Physical Management Ports IPv4
+2017-08-14 09:28:34: Pass: Virtual management Ports IPv6-Disable option can not be selected
+2017-08-14 09:28:34: Pass: Virtual management Ports IPv6-Modify option can not be selected
+2017-08-14 09:28:34: Pass: Virtual management Ports IPv6-View Detail option can be selected
+2017-08-14 09:28:30: Virtual management Ports IPv6
+2017-08-14 09:28:30: Pass: Virtual management Ports IPv4-Disable option can not be selected
+2017-08-14 09:28:30: Pass: Virtual management Ports IPv4-Modify option can not be selected
+2017-08-14 09:28:30: Pass: Virtual management Ports IPv4-View Detail option can be selected
+2017-08-14 09:28:30: Virtual management Ports IPv4
+2017-08-14 09:28:27: Network Management
+2017-08-14 09:28:21: iscsi -a add -t portal -r 2 -p 1 -m phy -s "iptype=4,dhcp=enable"
+
+administrator@cli> 
+2017-08-14 09:28:21: iscsi -t portal
+No portal in the subsystem
+
+administrator@cli> 
+2017-08-14 09:28:04: initiator
+-------------------------------------------------------------------------------
+Id: 0                                   Type: iscsi
+Name: a.b.com
+-------------------------------------------------------------------------------
+Id: 1                                   Type: iscsi
+Name: test.lunmapadd1.com
+-------------------------------------------------------------------------------
+Id: 2                                   Type: iscsi
+Name: test.lunmapadd2.com
+-------------------------------------------------------------------------------
+Id: 3                                   Type: fc
+Name: aa-aa-aa-aa-aa-aa-aa-11
+-------------------------------------------------------------------------------
+Id: 4                                   Type: fc
+Name: aa-aa-aa-aa-aa-aa-aa-12
+-------------------------------------------------------------------------------
+Id: 5                                   Type: iscsi
+Name: iqn.1991-05.com.microsoft:travis-pc
+-------------------------------------------------------------------------------
+Id: 6                                   Type: iscsi
+Name: iqn.1991-05.com.microsoft:zach-pc
+
+administrator@cli> 
+2017-08-14 09:28:04: 'result': 'f'
+2017-08-14 09:28:04: 
+<font color="red">Fail: View user permissions is failed on Device_Initiator page </font>
+2017-08-14 09:28:04: Fail: Delete Icon is enabled
+2017-08-14 09:28:04: Pass: Add Initiator button is disabled
+2017-08-14 09:28:04: Pass: Delete button is disabled
+2017-08-14 09:27:59: Initiator page
+2017-08-14 09:27:53: initiator
+-------------------------------------------------------------------------------
+Id: 0                                   Type: iscsi
+Name: a.b.com
+-------------------------------------------------------------------------------
+Id: 1                                   Type: iscsi
+Name: test.lunmapadd1.com
+-------------------------------------------------------------------------------
+Id: 2                                   Type: iscsi
+Name: test.lunmapadd2.com
+-------------------------------------------------------------------------------
+Id: 3                                   Type: fc
+Name: aa-aa-aa-aa-aa-aa-aa-11
+-------------------------------------------------------------------------------
+Id: 4                                   Type: fc
+Name: aa-aa-aa-aa-aa-aa-aa-12
+-------------------------------------------------------------------------------
+Id: 5                                   Type: iscsi
+Name: iqn.1991-05.com.microsoft:travis-pc
+-------------------------------------------------------------------------------
+Id: 6                                   Type: iscsi
+Name: iqn.1991-05.com.microsoft:zach-pc
+
+administrator@cli> 
+2017-08-14 09:27:34: 'result': 'p'
+2017-08-14 09:27:34: 
+<font color="green">Pass</font>
+2017-08-14 09:27:34: Pass: UPS Settings button is disabled
+2017-08-14 09:27:30: UPS page
+2017-08-14 09:27:10: 'result': 'p'
+2017-08-14 09:27:10: 
+<font color="green">Pass</font>
+2017-08-14 09:27:10: Pass: Global Physical Drive Settings button is disabled
+2017-08-14 09:27:10: Pass: SMART Log button is enabled
+2017-08-14 09:27:10: Pass: View button is enabled
+2017-08-14 09:27:10: Pass: Locate button is enabled
+2017-08-14 09:27:06: Physical Drive page
+2017-08-14 09:26:45: 'result': 'f'
+2017-08-14 09:26:45: 
+<font color="red">Fail: View user permissions is failed on Device_ComponentList page </font>
+2017-08-14 09:26:45: Fail: Buzzer Turn on Buzzer option can not be selected
+2017-08-14 09:26:45: Pass: Buzzer Disable option can be selected
+2017-08-14 09:26:45: Buzzer
+2017-08-14 09:26:45: Pass: Battery Recondition option can be selected
+2017-08-14 09:26:45: Pass: Battery View option can be selected
+2017-08-14 09:26:41: Battery
+2017-08-14 09:26:40: Pass: Controller 2 Settings option can not be selected
+2017-08-14 09:26:40: Pass: Controller 2 Locate option can be selected
+2017-08-14 09:26:40: Pass: Controller 2 View option can be selected
+2017-08-14 09:26:36: Controller
+2017-08-14 09:26:36: Pass: Enclosure Locate option can be selected
+2017-08-14 09:26:36: Pass: Enclosure View option can be selected
+2017-08-14 09:26:33: Enclosure
+2017-08-14 09:26:31: Component List page
+2017-08-14 09:26:16: 'result': 'p'
+2017-08-14 09:26:16: 
+<font color="green">Pass</font>
+2017-08-14 09:26:16: Pass: Shutdown/Restart Subsystem button is disabled
+2017-08-14 09:26:16: Pass: NTP Setting button is disabled
+2017-08-14 09:26:16: Pass: Date and Time Setting button is disabled
+2017-08-14 09:26:16:  Overview page
+2017-08-14 09:25:58: View user change password
+2017-08-14 09:25:58: Pass: Event Subscription option can be selected
+2017-08-14 09:25:58: Pass: Delete option can not be selected
+2017-08-14 09:25:58: Fail: Modify option can not be selected
+2017-08-14 09:25:58: Fail: Change Password option can not be selected
+2017-08-14 09:25:58: Pass: Add New User button is disabled
+2017-08-14 09:25:58: Pass: Delete button is disabled
+2017-08-14 09:25:57: Fail: Modify button is disabled
+2017-08-14 09:25:57: Fail: Change Password button is disabled
+2017-08-14 09:25:36: 'result': 'f'
+2017-08-14 09:25:36: 
+<font color="red">Fail: View user permissions is failed on Snapshot&Clone page </font>
+2017-08-14 09:25:36: Pass: Delete Clone option can not be selected
+2017-08-14 09:25:36: Fail: Modify Clone Detail option can be selected
+2017-08-14 09:25:36: Pass: View Clone option can be selected
+2017-08-14 09:25:32: Clone gear
+2017-08-14 09:25:32: Pass: Exported Snapshot option can not be selected
+2017-08-14 09:25:32: Pass: Delete Snapshot option can not be selected
+2017-08-14 09:25:32: Pass: Rollback option can not be selected
+2017-08-14 09:25:32: Pass: Modify Snapshot option Detail can not be selected
+2017-08-14 09:25:32: Pass: View Detail option can be selected
+2017-08-14 09:25:32: Pass: Create Snapshot option can not be selected
+2017-08-14 09:25:29: Snapshot gear
+2017-08-14 09:25:29: Pass: Delete Clone button is disabled
+2017-08-14 09:25:29: Pass: Delete Snapshot button is disabled
+2017-08-14 09:25:29: Pass: Create Clone button is disabled
+2017-08-14 09:25:29: Pass: Create Snapshot button is disabled
+2017-08-14 09:25:18: clone -a add -s "name=TestViewUserPC" -d 0
+
+administrator@cli> 
+2017-08-14 09:25:18: snapshot
+===============================================================================
+Id     Name                 Type       SrcId UsedCap    Status      OpStatus  
+===============================================================================
+0      TestViewUserPS       volume     0     32.77 KB   Un-Exported OK         
+
+administrator@cli> 
+2017-08-14 09:25:18: clone
+No clone found
+
+administrator@cli> 
+2017-08-14 09:25:18: snapshot -a add -t volume -s "name=TestViewUserPS" -d 0
+
+administrator@cli> 
+2017-08-14 09:25:18: volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+2017-08-14 09:25:18: snapshot
+No snapshot exists
+
+administrator@cli> 
+2017-08-14 09:25:18: volume
+===============================================================================
+Id   Name                  PoolId TotalCap    UsedCap     Status      OpStatus 
+===============================================================================
+0    TestViewUserPV        0      10 GB       10 GB       Exported    OK       
+
+administrator@cli> 
+2017-08-14 09:25:18: phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Pool1           
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Pool2           
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Pool3           
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Pool11          
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Pool4           
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Pool5           
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Pool6           
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Pool7           
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Pool8           
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Pool9           
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Pool12          
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Pool10          
+
+administrator@cli> 
+2017-08-14 09:24:56: pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    npUy8W5E3eSiGPDSV0g8Zx1IY11 1.83 TB   10.32 GB  1.82 TB   OK              
+1    vPAo9hm6C4TqOuVKhPiFXi7i511 1.83 TB   253.95 KB 1.83 TB   OK              
+2    AausNLUH__RfdbRimbF8eAW5q11 66.70 GB  253.95 KB 66.70 GB  OK              
+3    3FcvBwRqbmItudIvlgmfwP9aM11 3.67 TB   153.60 KB 3.67 TB   OK              
+4    7Ij05aGRMwu6lXTsbsPb4vfH511 1.83 TB   153.60 KB 1.83 TB   OK              
+5    e65LX7AOIiIQkJzimDTCzGtsy11 3.67 TB   153.60 KB 3.67 TB   OK              
+6    ZYYYO2LjwQludQCkWCNorAjCK11 3.67 TB   153.60 KB 3.67 TB   OK              
+7    j6zLGvdoA2HXGodMxn_hrJxg511 1.83 TB   253.95 KB 1.83 TB   OK              
+8    _w_Z7P1tyWL07lRkybrZjWVQi11 3.67 TB   153.60 KB 3.67 TB   OK              
+9    dU9gJm17ScixYroINQ0BUVzcS11 133.40 GB 229.38 KB 133.40 GB OK              
+10   jF8Yx9CXpc61tZpNQQntMRJdc11 66.70 GB  137.22 KB 66.70 GB  OK              
+11   MnJqcnbfGel9kve9iLMeEGS032  28.41 GB  229.38 KB 28.41 GB  OK              
+12   ZzWAHJRmwiVOB7rX7UWMGCnt22  28.41 GB  253.95 KB 28.41 GB  OK              
+
+administrator@cli> 
+2017-08-14 09:24:56: 'result': 'f'
+2017-08-14 09:24:56: 
+<font color="red">Fail: View user permissions is failed on volume page </font>
+2017-08-14 09:24:56: Pass: Snapshot & Clone option can be selected
+2017-08-14 09:24:56: Pass: Un-Exported option can not be selected
+2017-08-14 09:24:56: Pass: Delete option can not be selected
+2017-08-14 09:24:56: Pass: View option Detail can be selected
+2017-08-14 09:24:52: Pass: Un-export button is disabled
+2017-08-14 09:24:52: Pass: Export button is disabled
+2017-08-14 09:24:52: Fail: Delete button is enabled
+2017-08-14 09:24:52: Pass: Create New Volume button is disabled
+2017-08-14 09:24:44: volume -a add -s "name=TestViewUserPV,capacity=10GB" -p 0
+
+administrator@cli> 
+2017-08-14 09:24:44: pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    npUy8W5E3eSiGPDSV0g8Zx1IY11 1.83 TB   253.95 KB 1.83 TB   OK              
+1    vPAo9hm6C4TqOuVKhPiFXi7i511 1.83 TB   253.95 KB 1.83 TB   OK              
+2    AausNLUH__RfdbRimbF8eAW5q11 66.70 GB  253.95 KB 66.70 GB  OK              
+3    3FcvBwRqbmItudIvlgmfwP9aM11 3.67 TB   153.60 KB 3.67 TB   OK              
+4    7Ij05aGRMwu6lXTsbsPb4vfH511 1.83 TB   153.60 KB 1.83 TB   OK              
+5    e65LX7AOIiIQkJzimDTCzGtsy11 3.67 TB   153.60 KB 3.67 TB   OK              
+6    ZYYYO2LjwQludQCkWCNorAjCK11 3.67 TB   153.60 KB 3.67 TB   OK              
+7    j6zLGvdoA2HXGodMxn_hrJxg511 1.83 TB   253.95 KB 1.83 TB   OK              
+8    _w_Z7P1tyWL07lRkybrZjWVQi11 3.67 TB   153.60 KB 3.67 TB   OK              
+9    dU9gJm17ScixYroINQ0BUVzcS11 133.40 GB 229.38 KB 133.40 GB OK              
+10   jF8Yx9CXpc61tZpNQQntMRJdc11 66.70 GB  137.22 KB 66.70 GB  OK              
+11   MnJqcnbfGel9kve9iLMeEGS032  28.41 GB  229.38 KB 28.41 GB  OK              
+12   ZzWAHJRmwiVOB7rX7UWMGCnt22  28.41 GB  253.95 KB 28.41 GB  OK              
+
+administrator@cli> 
+2017-08-14 09:24:44: volume
+No volume exists
+
+administrator@cli> 
+2017-08-14 09:24:44: phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Pool1           
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Pool2           
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Pool3           
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Pool11          
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Pool4           
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Pool5           
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Pool6           
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Pool7           
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Pool8           
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Pool9           
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Pool12          
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Pool10          
+
+administrator@cli> 
+2017-08-14 09:24:25: pool
+===============================================================================
+Id   Name                        TotalCap  UsedCap   FreeCap   OpStatus       
+===============================================================================
+0    npUy8W5E3eSiGPDSV0g8Zx1IY11 1.83 TB   253.95 KB 1.83 TB   OK              
+1    vPAo9hm6C4TqOuVKhPiFXi7i511 1.83 TB   253.95 KB 1.83 TB   OK              
+2    AausNLUH__RfdbRimbF8eAW5q11 66.70 GB  253.95 KB 66.70 GB  OK              
+3    3FcvBwRqbmItudIvlgmfwP9aM11 3.67 TB   153.60 KB 3.67 TB   OK              
+4    7Ij05aGRMwu6lXTsbsPb4vfH511 1.83 TB   153.60 KB 1.83 TB   OK              
+5    e65LX7AOIiIQkJzimDTCzGtsy11 3.67 TB   153.60 KB 3.67 TB   OK              
+6    ZYYYO2LjwQludQCkWCNorAjCK11 3.67 TB   153.60 KB 3.67 TB   OK              
+7    j6zLGvdoA2HXGodMxn_hrJxg511 1.83 TB   253.95 KB 1.83 TB   OK              
+8    _w_Z7P1tyWL07lRkybrZjWVQi11 3.67 TB   153.60 KB 3.67 TB   OK              
+9    dU9gJm17ScixYroINQ0BUVzcS11 133.40 GB 229.38 KB 133.40 GB OK              
+10   jF8Yx9CXpc61tZpNQQntMRJdc11 66.70 GB  137.22 KB 66.70 GB  OK              
+11   MnJqcnbfGel9kve9iLMeEGS032  28.41 GB  229.38 KB 28.41 GB  OK              
+12   ZzWAHJRmwiVOB7rX7UWMGCnt22  28.41 GB  253.95 KB 28.41 GB  OK              
+
+administrator@cli> 
+2017-08-14 09:24:25: 'result': 'f'
+2017-08-14 09:24:25: 
+<font color="red">Fail: View user permissions is failed on pool page </font>
+2017-08-14 09:24:25: Pass: Extend Pool option can not be selected
+2017-08-14 09:24:25: Pass: Delete option can not be selected
+2017-08-14 09:24:25: Pass: View Detail option can be selected
+2017-08-14 09:24:22: Fail: Global Settings button is enabled
+2017-08-14 09:24:22: Pass: Extend Pool button is disabled
+2017-08-14 09:24:22: Fail: Delete button is enabled
+2017-08-14 09:24:22: Pass: Create New Pool button is disabled
+2017-08-14 09:24:12: phydrv
+===============================================================================
+PdId Model       Type     CfgCapacity Location      OpStatus   ConfigStatus    
+===============================================================================
+1    HUS723020AL SAS HDD  2 TB        Encl1 Slot1   OK         Pool0           
+     S640                                                                      
+2    HDS722020AL SAS HDD  2 TB        Encl1 Slot2   OK         Pool1           
+     A330                                                                      
+3    ST373455SS  SAS HDD  73 GB       Encl1 Slot3   OK         Pool2           
+4    HUS724040AL SAS HDD  4 TB        Encl1 Slot4   OK         Pool3           
+     S640                                                                      
+5    INTEL       SAS SSD  31 GB       Encl1 Slot5   OK         Pool11          
+7    HUS723020AL SAS HDD  2 TB        Encl1 Slot7   OK         Pool4           
+     S640                                                                      
+8    HUS724040AL SAS HDD  4 TB        Encl1 Slot8   OK         Pool5           
+     S640                                                                      
+9    HUS724040AL SAS HDD  4 TB        Encl1 Slot9   OK         Pool6           
+     S640                                                                      
+11   HDS722020AL SAS HDD  2 TB        Encl1 Slot11  OK         Pool7           
+     A330                                                                      
+12   HUS724040AL SAS HDD  4 TB        Encl1 Slot12  OK         Pool8           
+     S640                                                                      
+13   ST3146356SS SAS HDD  146 GB      Encl1 Slot13  OK         Pool9           
+15   SSD U110    SAS SSD  31 GB       Encl1 Slot15  OK         Pool12          
+     32GB                                                                      
+16   ST373455SS  SAS HDD  73 GB       Encl1 Slot16  OK         Pool10          
+
+administrator@cli> 
 2017-08-03 14:58:11: 'result': 'f'
 2017-08-03 14:58:11: 
 <font color="red">Fail: View user permissions is failed on User page </font>

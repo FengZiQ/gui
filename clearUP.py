@@ -13,6 +13,19 @@ def clearUpPool(c):
     if len(PLId) != 0:
         SendCmdconfirm(c, 'pool -a del -i ' + PLId[0] + ' -f')
 
+def clearUpSpare(c):
+    SendCmd(c, 'spare -a del -i 0')
+
+def clearUpRcache(c):
+    PDInfo = SendCmd(c, 'phydrv')
+    PDId = []
+    row = PDInfo.split('\r\n')
+    for i in range(4, len(row)-2):
+        if len(row[i].split()) >= 9 and "ReadCache" in row[i]:
+            PDId.append(row[i].split()[0])
+
+    SendCmd(c, 'rcache -a del -p ' + PDId[0])
+
 def clearUpVolume(c):
     VMInfo = SendCmd(c, 'volume')
     VMId = []

@@ -17,7 +17,7 @@ class verify_view_user_permissions_Volume_page(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "https://10.84.2.164/"
+        self.base_url = "https://10.84.2.116/"
         self.verificationErrors = []
         self.accept_next_alert = True
 
@@ -35,7 +35,7 @@ class verify_view_user_permissions_Volume_page(unittest.TestCase):
 
         driver.get(self.base_url + "/")
         driver.find_element_by_name("username").clear()
-        driver.find_element_by_name("username").send_keys("a")
+        driver.find_element_by_name("username").send_keys("1")
         driver.find_element_by_name("password").clear()
         driver.find_element_by_name("password").send_keys("1")
         driver.find_element_by_xpath("//button[@type='submit']").click()
@@ -123,6 +123,7 @@ class verify_view_user_permissions_Volume_page(unittest.TestCase):
             tolog('\n<font color="green">Pass</font>')
             tolog(Pass)
 
+        clearUpVolume(c)
         clearUpPool(c)
         ssh.close()
 
