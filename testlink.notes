@@ -211,3 +211,37 @@ administrator@cli>
 rcache -a del -p 3
 
 administrator@cli> 
+Fail: please check out: 1
+'result': 'f'
+Fail: please check out: 1
+'result': 'f'
+Fail: please check out: 0
+'result': 'f'
+Fail: please check out: 1
+'result': 'f'
+Fail: please check out: 0
+'result': 'f'
+Fail: please check out: 1
+'result': 'f'
+Fail: please check out: 0
+'result': 'f'
+Fail: please check out: 1
+'result': 'f'
+Fail: please check out: 0
+'result': 'f'
+Fail: please check out: 1 GB
+'result': 'f'
+Fail: please check out: Disable
+'result': 'f'
+Fail: please check out: 1 TB
+'result': 'f'
+Fail: please check out: Disable
+'result': 'f'
+Fail: please check out: 1 GB
+'result': 'f'
+Fail: please check out: Disable
+'result': 'f'
+Fail: please check out: 1 TB
+'result': 'f'
+Fail: please check out: Disable
+'result': 'f'
