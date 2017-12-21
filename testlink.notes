@@ -245,3 +245,350 @@ Fail: please check out: 1 TB
 'result': 'f'
 Fail: please check out: Disable
 'result': 'f'
+Expected: Mounted; Actual: Mounted
+Expected: T_NAS_pool_0; Actual: T_NAS_pool_0
+Expected: latency; Actual: latency
+Expected: off; Actual: off
+Expected: standard; Actual: standard
+Expected: 128 KB; Actual: 128 KB
+Expected: 1; Actual: 1
+Expected: 1 GB; Actual: 1000000000
+Fail: please check out: total_capacity
+
+Expected: OK; Actual: OK
+Expected: 0; Actual: 0
+Expected: Enabled; Actual: Enabled
+'result': 'f'
+Expected: Mounted; Actual: Mounted
+Expected: T_NAS_pool_0; Actual: T_NAS_pool_0
+Expected: latency; Actual: latency
+Expected: off; Actual: off
+Expected: standard; Actual: standard
+Expected: 128 KB; Actual: 128 KB
+Expected: T2; Actual: T2
+Expected: 2 GB; Actual: 2000000000
+Fail: please check out: total_capacity
+
+Expected: OK; Actual: OK
+Expected: 1; Actual: 0
+Fail: please check out: pool_id
+
+Expected: Disabled; Actual: Disabled
+'result': 'f'
+Expected: Mounted; Actual: Mounted
+Expected: T_NAS_pool_1; Actual: T_NAS_pool_1
+Expected: latency; Actual: latency
+Expected: off; Actual: off
+Expected: standard; Actual: standard
+Expected: 128 KB; Actual: 128 KB
+Expected: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1; Actual: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+Expected: 1 TB; Actual: 1000000000000
+Fail: please check out: total_capacity
+
+Expected: OK; Actual: OK
+Expected: 0; Actual: 1
+Fail: please check out: pool_id
+
+Expected: Enabled; Actual: Enabled
+'result': 'f'
+Expected: Mounted; Actual: Mounted
+Expected: T_NAS_pool_1; Actual: T_NAS_pool_1
+Expected: latency; Actual: latency
+Expected: off; Actual: off
+Expected: standard; Actual: standard
+Expected: 128 KB; Actual: 128 KB
+Expected: _______________________________; Actual: _______________________________
+Expected: 2 TB; Actual: 2000000000000
+Fail: please check out: total_capacity
+
+Expected: OK; Actual: OK
+Expected: 1; Actual: 1
+Expected: Disabled; Actual: Disabled
+'result': 'f'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_0; Actual: T_NAS_pool_0
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: 1; Actual: 1
+
+total_capacity Expected: 1 GB; Actual: 1000000000
+
+Fail: please check out: total_capacity
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 0; Actual: 0
+
+thin_prov Expected: Enabled; Actual: Enabled
+
+'result': 'f'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_0; Actual: T_NAS_pool_0
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: T2; Actual: T2
+
+total_capacity Expected: 2 GB; Actual: 2000000000
+
+Fail: please check out: total_capacity
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 1; Actual: 0
+
+Fail: please check out: pool_id
+
+thin_prov Expected: Disabled; Actual: Disabled
+
+'result': 'f'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_1; Actual: T_NAS_pool_1
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1; Actual: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+
+total_capacity Expected: 1 TB; Actual: 1000000000000
+
+Fail: please check out: total_capacity
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 0; Actual: 1
+
+Fail: please check out: pool_id
+
+thin_prov Expected: Enabled; Actual: Enabled
+
+'result': 'f'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_1; Actual: T_NAS_pool_1
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: _______________________________; Actual: _______________________________
+
+total_capacity Expected: 2 TB; Actual: 2000000000000
+
+Fail: please check out: total_capacity
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 1; Actual: 1
+
+thin_prov Expected: Disabled; Actual: Disabled
+
+'result': 'f'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_0; Actual: T_NAS_pool_0
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: 1; Actual: 1
+
+total_capacity Expected: 1000000000; Actual: 1000000000
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 0; Actual: 0
+
+thin_prov Expected: Enabled; Actual: Enabled
+
+'result': 'p'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_0; Actual: T_NAS_pool_0
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: T2; Actual: T2
+
+total_capacity Expected: 2000000000; Actual: 2000000000
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 0; Actual: 0
+
+thin_prov Expected: Disabled; Actual: Disabled
+
+'result': 'p'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_1; Actual: T_NAS_pool_1
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1; Actual: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+
+total_capacity Expected: 1000000000000; Actual: 1000000000000
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 1; Actual: 1
+
+thin_prov Expected: Enabled; Actual: Enabled
+
+'result': 'p'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_1; Actual: T_NAS_pool_1
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: _______________________________; Actual: _______________________________
+
+total_capacity Expected: 2000000000000; Actual: 2000000000000
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 1; Actual: 1
+
+thin_prov Expected: Disabled; Actual: Disabled
+
+'result': 'p'
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_0; Actual: T_NAS_pool_0
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: 1; Actual: 1
+
+total_capacity Expected: 1000000000; Actual: 1000000000
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 1; Actual: 0
+
+Fail: please check out: pool_id
+
+thin_prov Expected: Enabled; Actual: Enabled
+
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_0; Actual: T_NAS_pool_0
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: T2; Actual: T2
+
+total_capacity Expected: 2000000000; Actual: 2000000000
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 0; Actual: 0
+
+thin_prov Expected: Disabled; Actual: Disabled
+
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_1; Actual: T_NAS_pool_1
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1; Actual: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+
+total_capacity Expected: 1000000000000; Actual: 1000000000000
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 1; Actual: 1
+
+thin_prov Expected: Enabled; Actual: Enabled
+
+status Expected: Mounted; Actual: Mounted
+
+pool_name Expected: T_NAS_pool_1; Actual: T_NAS_pool_1
+
+logbias Expected: latency; Actual: latency
+
+compress Expected: off; Actual: off
+
+sync Expected: standard; Actual: standard
+
+recsize Expected: 128 KB; Actual: 128 KB
+
+name Expected: _______________________________; Actual: _______________________________
+
+total_capacity Expected: 2000000000000; Actual: 2000000000000
+
+operational_status Expected: OK; Actual: OK
+
+pool_id Expected: 1; Actual: 1
+
+thin_prov Expected: Disabled; Actual: Disabled
+
+'result': 'f'

@@ -23,39 +23,54 @@ def create_nas_share():
 
     # test date
     test_data = {
-        "pool": ['[1]', '[1]', '[2]', '[2]'],
+        "pool_id": ['0', '0', '1', '1'],
         "name": ['1', 'T2', 't_1'*10, '_'*31],
-        "thin": ['/span', '', '/span', ''],
-        "unit": ['[1]', '[1]', '[2]', '[2]'],
+        "thin": ['Enabled', 'Disabled', 'Enabled', 'Disable'],
+        "unit": ['GB', 'GB', 'TB', 'TB'],
         "capacity": ['1', '2', '1', '2']
     }
     # check data
     check_data = {
+        "name": ['1', 'T2', 't_1'*10, '_'*31],
         "pool_name": ['T_NAS_pool_0', 'T_NAS_pool_0', 'T_NAS_pool_1', 'T_NAS_pool_1'],
-        "thin_prov": ['Enabled', 'Disable', 'Enabled', 'Disable'],
-        "capacity": ['1 GB', '2 GB', '1 TB', '2 TB']
+        "pool_id": [0, 0, 1, 1],
+        "thin_prov": ['Enabled', 'Disabled', 'Enabled', 'Disabled'],
+        "total_capacity": [1000000000, 2000000000, 1000000000000, 2000000000000],
+        "sync": ['standard', 'standard', 'standard', 'standard'],
+        "recsize": ['128 KB', '128 KB', '128 KB', '128 KB'],
+        "compress": ['off', 'off', 'off', 'off'],
+        "logbias": ['latency', 'latency', 'latency', 'latency'],
+        "status": ['Mounted', 'Mounted', 'Mounted', 'Mounted'],
+        "operational_status": ['OK', 'OK', 'OK', 'OK']
     }
 
     # click "NAS Share" button
     tool.click_action('//div[2]/div[1]/ul/li[5]/a/span')
 
+    # create 4 nas share
     for i in range(len(test_data["pool"])):
 
         # click "Create New NAS Share" button
         tool.click_action('/html/body/div[1]/div/div[3]/div[1]/div/div[2]/button')
 
         # select target Pool
-        tool.click_action('//form/div[1]/div/select/option' + test_data["pool"][i])
+        if test_data["pool_id"] == "0":
+            tool.click_action('//form/div[1]/div/select/option[1]')
+        else:
+            tool.click_action('//form/div[1]/div/select/option[2]')
 
         # filling Nas Share name
         tool.fill_action('//form/div[2]/div[1]/input', test_data["name"][i])
 
-        if test_data["thin"][i] != '':
+        if test_data["thin"][i] == 'Enabled':
             # Enable Thin Provision
-            tool.click_action('//form/div[3]/div/label' + test_data["thin"][i])
+            tool.click_action('//form/div[3]/div/label/span')
 
         # select capacity unit
-        tool.click_action('//form/div[4]/div[1]/div/div[2]/select/option' + test_data["unit"][i])
+        if test_data["unit"] == "GB":
+            tool.click_action('//form/div[4]/div[1]/div/div[2]/select/option[1]')
+        else:
+            tool.click_action('//form/div[4]/div[1]/div/div[2]/select/option[2]')
 
         # filling capacity
         tool.fill_action('//form/div[4]/div[1]/div/div[2]/input', test_data["capacity"][i])
@@ -69,27 +84,21 @@ def create_nas_share():
 
             info = json.loads(nas_info["text"])[0]
 
-            if info["name"] != test_data["name"][i]:
+            for key in check_data:
 
-                tool.FailFlag = True
-                tolog('Fail: please check out: ' + test_data["name"][i])
+                if key in info.keys():
 
-            elif info["pool_name"] != check_data["pool_name"][i]:
+                    tolog(key + ' Expected: ' + str(check_data[key][i]) + '; ' + 'Actual: ' + str(info[key]) + '\r\n')
 
-                tool.FailFlag = True
-                tolog('Fail: please check out: ' + check_data["pool_name"][i])
+                    if check_data[key][i] != info[key]:
 
-            elif info["thin_prov"] != check_data["thin_prov"][i]:
+                        tool.FailFlag = True
+                        tolog('Fail: please check out: ' + key + '\r\n')
 
-                tool.FailFlag = True
-                tolog('Fail: please check out: ' + check_data["thin_prov"][i])
+    else:
 
-            elif info["total_capacity"] != check_data["capacity"][i]:
 
-                tool.FailFlag = True
-                tolog('Fail: please check out: ' + check_data["capacity"][i])
-
-        tool.mark_status()
+    tool.mark_status()
 
     tool.finished()
 

@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dedf01fd-181b-41ea-bcb2-3d6659f68355" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/create_NASShare.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/find_unconfigured_pd_id.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gui_test.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clearUP.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/create_pool.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/precondition.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/send_cmd.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ssh_connect.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test_grep.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Administration_BackgroundActivity_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Administration_Event_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Administration_FactoryDefault_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Administration_ImportExport_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Administration_Service_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Device_ComponentList_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Device_FCManagement_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Device_ISCSIManagement_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Device_Initiator_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Device_NetworkManagement_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Device_Overview_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Device_PhysicalDrive_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Device_UPS_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_SnapshotClone_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_User_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_Volume_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/verify_view_user_permissions_pool_page.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_NASShare.py" afterPath="$PROJECT_DIR$/create_NASShare.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/geckodriver.log" afterPath="$PROJECT_DIR$/geckodriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gui_scripts.log" afterPath="$PROJECT_DIR$/gui_scripts.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testlink.notes" afterPath="$PROJECT_DIR$/testlink.notes" />
@@ -43,26 +17,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gui_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gui_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-              <folding>
-                <element signature="e#24#54#0" expanded="true" />
-                <element signature="e#277#902#0" expanded="false" />
-                <element signature="e#936#955#0" expanded="false" />
-                <element signature="e#1310#1561#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="create_NASShare.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/create_NASShare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="276">
+              <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
               <folding>
                 <element signature="e#25#47#0" expanded="true" />
                 <element signature="e#124#378#0" expanded="false" />
@@ -83,6 +42,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Fail:</find>
+      <find>fail:</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,8 +66,8 @@
         <option value="$PROJECT_DIR$/../cli/BuildVerification_jenkins.py" />
         <option value="$PROJECT_DIR$/create_New_NASShare.py" />
         <option value="$PROJECT_DIR$/gui_scripts.log" />
-        <option value="$PROJECT_DIR$/create_NASShare.py" />
         <option value="$PROJECT_DIR$/gui_test.py" />
+        <option value="$PROJECT_DIR$/create_NASShare.py" />
       </list>
     </option>
   </component>
@@ -144,20 +104,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view user permissions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,7 +372,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -759,7 +705,7 @@
     <entry file="file://$PROJECT_DIR$/gui_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
             <element signature="e#277#902#0" expanded="false" />
@@ -771,8 +717,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/create_NASShare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="276">
+          <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
           <folding>
             <element signature="e#25#47#0" expanded="true" />
             <element signature="e#124#378#0" expanded="false" />
