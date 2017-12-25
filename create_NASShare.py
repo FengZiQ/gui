@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# 2017.12.21
 
 from gui_test import *
 from find_unconfigured_pd_id import *
@@ -6,6 +7,7 @@ import json
 
 
 def precondition():
+
     pd_id = find_pd_id()
     # create pool
     server.webapi('post', 'pool', {"name": "T_NAS_pool_0", "pds": pd_id[:3], "raid_level": "raid5"})
@@ -16,8 +18,8 @@ def precondition():
 
 
 def create_nas_share():
-
-    # precondition()
+    # precondition
+    precondition()
 
     tool = GUITestTool()
 
@@ -48,7 +50,7 @@ def create_nas_share():
     tool.click_action('//div[2]/div[1]/ul/li[5]/a/span')
 
     # create 4 nas share
-    for i in range(len(test_data["pool"])):
+    for i in range(len(test_data["pool_id"])):
 
         # click "Create New NAS Share" button
         tool.click_action('/html/body/div[1]/div/div[3]/div[1]/div/div[2]/button')
@@ -94,9 +96,6 @@ def create_nas_share():
 
                         tool.FailFlag = True
                         tolog('Fail: please check out: ' + key + '\r\n')
-
-    else:
-
 
     tool.mark_status()
 
