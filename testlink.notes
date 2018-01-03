@@ -592,3 +592,124 @@ pool_id Expected: 1; Actual: 1
 thin_prov Expected: Disabled; Actual: Disabled
 
 'result': 'f'
+'result': 'p'
+status: ['Syncing', 'Syncing', 'Syncing', 'Syncing'] != Syncing
+description: ['Syncing', 'Syncing', 'Syncing', 'Syncing'] != Syncing.
+dst_pool_name: ['T_replication_1', 'T_replication_1', 'T_replication_0', 'T_replication_0'] != T_replication_1
+src_name: ['T_replication_vol_2', 'T_replication_vol_3', 'T_replication_vol_4', 'T_replication_vol_5'] != T_replication_vol_2
+kind: ['Local', 'Local', 'Local', 'Local'] != Local
+src_id: [2, 3, 4, 5] != 2
+dst_name: ['1', 'T2', 't_1t_1t_1t_1t_1t_1t_1t_1t_1t_1', '_______________________________'] != 1
+total_capacity: [4000000000L, 4000000000L, 1000000000, 1000000000] != 3999989760
+sync_mode: ['Async', 'Semi-Sync', 'Sync', 'Sync'] != Async
+dst_id: [6, 7, 8, 9] != 6
+mode: ['Active-passive', 'Active-passive', 'Active-passive', 'Active-passive'] != Active-Passive
+src_pool_name: ['T_replication_0', 'T_replication_0', 'T_replication_1', 'T_replication_1'] != T_replication_0
+description: Syncing != Syncing.
+total_capacity: 4000000000 != 3999989760
+mode: Active-passive != Active-Passive
+description: Syncing != Syncing.
+src_name: T_replication_vol_3 != T_replication_vol_2
+src_id: 3 != 2
+dst_name: T2 != 1
+total_capacity: 4000000000 != 3999989760
+sync_mode: Semi-Sync != Async
+dst_id: 7 != 6
+mode: Active-passive != Active-Passive
+status: Syncing != OK
+description: Syncing != Ready.
+dst_pool_name: T_replication_0 != T_replication_1
+src_name: T_replication_vol_4 != T_replication_vol_2
+src_id: 4 != 2
+dst_name: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1 != 1
+total_capacity: 1000000000 != 3999989760
+sync_mode: Sync != Async
+dst_id: 8 != 6
+mode: Active-passive != Active-Passive
+src_pool_name: T_replication_1 != T_replication_0
+status: Syncing != OK
+description: Syncing != Ready.
+dst_pool_name: T_replication_0 != T_replication_1
+src_name: T_replication_vol_5 != T_replication_vol_2
+src_id: 5 != 2
+dst_name: _______________________________ != 1
+total_capacity: 1000000000 != 3999989760
+sync_mode: Sync != Async
+dst_id: 9 != 6
+mode: Active-passive != Active-Passive
+src_pool_name: T_replication_1 != T_replication_0
+'result': 'f'
+dst_pool_name: T_replication_0 != T_replication_2
+src_name: T_replication_vol_4 != T_replication_vol_5
+src_id: 4 != 5
+total_capacity: 1000000000 != 999997440
+status: Syncing != OK
+description: Syncing. != Ready.
+dst_pool_name: T_replication_0 != T_replication_2
+dst_name: _______________________________ != t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+total_capacity: 1000000000 != 999997440
+dst_id: 9 != 8
+'result': 'f'
+check replication list information
+
+check replication list information
+
+src_name: T_replication_vol_2 != T_replication_vol_3
+
+src_id: 2 != 3
+
+dst_name: 1 != T2
+
+sync_mode: Async != Semi-Sync
+
+dst_id: 6 != 7
+
+check replication list information
+
+dst_pool_name: T_replication_1 != T_replication_2
+
+src_name: T_replication_vol_2 != T_replication_vol_5
+
+src_id: 2 != 5
+
+dst_name: 1 != t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+
+total_capacity: 3999989760 != 999997440
+
+sync_mode: Async != Sync
+
+dst_id: 6 != 8
+
+src_pool_name: T_replication_0 != T_replication_1
+
+check replication list information
+
+status: Syncing != OK
+
+description: Syncing. != Ready.
+
+dst_pool_name: T_replication_1 != T_replication_2
+
+src_name: T_replication_vol_2 != T_replication_vol_5
+
+src_id: 2 != 5
+
+dst_name: 1 != t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+
+total_capacity: 3999989760 != 999997440
+
+sync_mode: Async != Sync
+
+dst_id: 6 != 8
+
+src_pool_name: T_replication_0 != T_replication_1
+
+check replication list information
+
+status: Syncing != OK
+
+description: Syncing. != Ready.
+
+check source volume and destination volume info
+
+'result': 'f'

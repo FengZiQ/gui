@@ -9,7 +9,7 @@ Fail = "'result': 'f'"
 
 class GUITestTool(object):
 
-    def __init__(self, base_url="https://10.84.2.116/", user='administrator', password='password'):
+    def __init__(self, base_url="https://10.84.2.164/", user='administrator', password='password'):
         # mark test cases execution status
         self.FailFlag = False
 

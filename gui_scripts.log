@@ -1,3 +1,124 @@
+2018-01-03 17:44:06: 'result': 'f'
+2018-01-03 17:44:06: check source volume and destination volume info
+
+2018-01-03 17:44:06: description: Syncing. != Ready.
+
+2018-01-03 17:44:06: status: Syncing != OK
+
+2018-01-03 17:44:06: check replication list information
+
+2018-01-03 17:33:52: src_pool_name: T_replication_0 != T_replication_1
+
+2018-01-03 17:33:52: dst_id: 6 != 8
+
+2018-01-03 17:33:52: sync_mode: Async != Sync
+
+2018-01-03 17:33:52: total_capacity: 3999989760 != 999997440
+
+2018-01-03 17:33:52: dst_name: 1 != t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+
+2018-01-03 17:33:52: src_id: 2 != 5
+
+2018-01-03 17:33:52: src_name: T_replication_vol_2 != T_replication_vol_5
+
+2018-01-03 17:33:52: dst_pool_name: T_replication_1 != T_replication_2
+
+2018-01-03 17:33:52: description: Syncing. != Ready.
+
+2018-01-03 17:33:52: status: Syncing != OK
+
+2018-01-03 17:33:52: check replication list information
+
+2018-01-03 17:33:31: src_pool_name: T_replication_0 != T_replication_1
+
+2018-01-03 17:33:31: dst_id: 6 != 8
+
+2018-01-03 17:33:31: sync_mode: Async != Sync
+
+2018-01-03 17:33:31: total_capacity: 3999989760 != 999997440
+
+2018-01-03 17:33:31: dst_name: 1 != t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+
+2018-01-03 17:33:31: src_id: 2 != 5
+
+2018-01-03 17:33:31: src_name: T_replication_vol_2 != T_replication_vol_5
+
+2018-01-03 17:33:31: dst_pool_name: T_replication_1 != T_replication_2
+
+2018-01-03 17:33:31: check replication list information
+
+2018-01-03 17:33:08: dst_id: 6 != 7
+
+2018-01-03 17:33:08: sync_mode: Async != Semi-Sync
+
+2018-01-03 17:33:08: dst_name: 1 != T2
+
+2018-01-03 17:33:08: src_id: 2 != 3
+
+2018-01-03 17:33:08: src_name: T_replication_vol_2 != T_replication_vol_3
+
+2018-01-03 17:33:08: check replication list information
+
+2018-01-03 17:32:45: check replication list information
+
+2018-01-03 16:50:32: 'result': 'f'
+2018-01-03 16:50:32: dst_id: 9 != 8
+2018-01-03 16:50:32: total_capacity: 1000000000 != 999997440
+2018-01-03 16:50:32: dst_name: _______________________________ != t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1
+2018-01-03 16:50:32: dst_pool_name: T_replication_0 != T_replication_2
+2018-01-03 16:50:32: description: Syncing. != Ready.
+2018-01-03 16:50:32: status: Syncing != OK
+2018-01-03 16:50:11: total_capacity: 1000000000 != 999997440
+2018-01-03 16:50:11: src_id: 4 != 5
+2018-01-03 16:50:11: src_name: T_replication_vol_4 != T_replication_vol_5
+2018-01-03 16:50:11: dst_pool_name: T_replication_0 != T_replication_2
+2018-01-03 16:37:56: 'result': 'f'
+2018-01-03 16:37:56: src_pool_name: T_replication_1 != T_replication_0
+2018-01-03 16:37:56: mode: Active-passive != Active-Passive
+2018-01-03 16:37:56: dst_id: 9 != 6
+2018-01-03 16:37:56: sync_mode: Sync != Async
+2018-01-03 16:37:56: total_capacity: 1000000000 != 3999989760
+2018-01-03 16:37:56: dst_name: _______________________________ != 1
+2018-01-03 16:37:56: src_id: 5 != 2
+2018-01-03 16:37:56: src_name: T_replication_vol_5 != T_replication_vol_2
+2018-01-03 16:37:56: dst_pool_name: T_replication_0 != T_replication_1
+2018-01-03 16:37:56: description: Syncing != Ready.
+2018-01-03 16:37:56: status: Syncing != OK
+2018-01-03 16:37:35: src_pool_name: T_replication_1 != T_replication_0
+2018-01-03 16:37:35: mode: Active-passive != Active-Passive
+2018-01-03 16:37:35: dst_id: 8 != 6
+2018-01-03 16:37:35: sync_mode: Sync != Async
+2018-01-03 16:37:35: total_capacity: 1000000000 != 3999989760
+2018-01-03 16:37:35: dst_name: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1 != 1
+2018-01-03 16:37:35: src_id: 4 != 2
+2018-01-03 16:37:35: src_name: T_replication_vol_4 != T_replication_vol_2
+2018-01-03 16:37:35: dst_pool_name: T_replication_0 != T_replication_1
+2018-01-03 16:37:35: description: Syncing != Ready.
+2018-01-03 16:37:35: status: Syncing != OK
+2018-01-03 16:37:12: mode: Active-passive != Active-Passive
+2018-01-03 16:37:12: dst_id: 7 != 6
+2018-01-03 16:37:12: sync_mode: Semi-Sync != Async
+2018-01-03 16:37:12: total_capacity: 4000000000 != 3999989760
+2018-01-03 16:37:12: dst_name: T2 != 1
+2018-01-03 16:37:12: src_id: 3 != 2
+2018-01-03 16:37:12: src_name: T_replication_vol_3 != T_replication_vol_2
+2018-01-03 16:37:12: description: Syncing != Syncing.
+2018-01-03 16:36:49: mode: Active-passive != Active-Passive
+2018-01-03 16:36:49: total_capacity: 4000000000 != 3999989760
+2018-01-03 16:36:49: description: Syncing != Syncing.
+2018-01-03 16:31:37: src_pool_name: ['T_replication_0', 'T_replication_0', 'T_replication_1', 'T_replication_1'] != T_replication_0
+2018-01-03 16:31:37: mode: ['Active-passive', 'Active-passive', 'Active-passive', 'Active-passive'] != Active-Passive
+2018-01-03 16:31:37: dst_id: [6, 7, 8, 9] != 6
+2018-01-03 16:31:37: sync_mode: ['Async', 'Semi-Sync', 'Sync', 'Sync'] != Async
+2018-01-03 16:31:37: total_capacity: [4000000000L, 4000000000L, 1000000000, 1000000000] != 3999989760
+2018-01-03 16:31:37: dst_name: ['1', 'T2', 't_1t_1t_1t_1t_1t_1t_1t_1t_1t_1', '_______________________________'] != 1
+2018-01-03 16:31:37: src_id: [2, 3, 4, 5] != 2
+2018-01-03 16:31:37: kind: ['Local', 'Local', 'Local', 'Local'] != Local
+2018-01-03 16:31:37: src_name: ['T_replication_vol_2', 'T_replication_vol_3', 'T_replication_vol_4', 'T_replication_vol_5'] != T_replication_vol_2
+2018-01-03 16:31:37: dst_pool_name: ['T_replication_1', 'T_replication_1', 'T_replication_0', 'T_replication_0'] != T_replication_1
+2018-01-03 16:31:37: description: ['Syncing', 'Syncing', 'Syncing', 'Syncing'] != Syncing.
+2018-01-03 16:31:37: status: ['Syncing', 'Syncing', 'Syncing', 'Syncing'] != Syncing
+2018-01-02 17:17:18: 'result': 'p'
 2017-12-21 17:33:22: 'result': 'f'
 2017-12-21 17:33:22: thin_prov Expected: Disabled; Actual: Disabled
 
