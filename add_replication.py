@@ -5,6 +5,8 @@ from gui_test import *
 from find_unconfigured_pd_id import *
 import json
 
+tool = GUITestTool()
+
 
 def precondition():
     # stop all replication
@@ -120,8 +122,6 @@ def add_replication():
     # precondition
     precondition()
 
-    tool = GUITestTool()
-
     # test date
     test_data = {
         "src_pool_name": ['T_replication_0', 'T_replication_0', 'T_replication_1', 'T_replication_1'],
@@ -151,94 +151,121 @@ def add_replication():
     ]
 
     # click "Volume" button
-    tool.click_action('//div[2]/div[1]/ul/li[4]/a/span')
+    tool.click_action('//div[2]/div[1]/ul/li[4]/a/span', 'Volume button')
 
     # click "Replication" button
-    tool.click_action('//div[3]/div/div/div/ul/li/ul/li[4]/a/span')
+    tool.click_action('//div[3]/div/div/div/ul/li/ul/li[4]/a/span', 'Replication button')
 
     # create 4 replication
     for i in range(len(test_data["dst_name"])):
 
         # click "Add" button
-        tool.click_action('//pr-button-bar/div/div/div/button[1]')
+        tool.click_action('//pr-button-bar/div/div/div/button[1]', 'Add button')
 
-        # select source Pool
+        # select source pool
         if test_data["src_pool_name"][i] == "T_replication_0":
-            tool.click_action('//form/div[1]/div[1]/select/option[1]')
+            tool.click_action('//form/div[1]/div[1]/select/option[1]', 'source pool drop down box')
         elif test_data["src_pool_name"][i] == "T_replication_1":
-            tool.click_action('//form/div[1]/div[1]/select/option[2]')
+            tool.click_action('//form/div[1]/div[1]/select/option[2]' 'source pool drop down box')
 
         # select source volume
         if test_data["src_id"][i] == 2 or test_data["src_id"][i] == 3 or test_data["src_id"][i] == 5:
-            tool.click_action('//form/div[2]/div[1]/select/option[1]')
+            tool.click_action('//form/div[2]/div[1]/select/option[1]', 'source volume drop down box')
         elif test_data["src_id"][i] == 4:
-            tool.click_action('//form/div[2]/div[1]/select/option[2]')
+            tool.click_action('//form/div[2]/div[1]/select/option[2]', 'source volume drop down box')
 
         # select destination pool
-        tool.click_action('//form/div[3]/div[1]/select/option[3]')
+        tool.click_action('//form/div[3]/div[1]/select/option[3]', 'destination pool drop down box')
 
         # filling destination volume name
-        tool.fill_action('//form/div[4]/div[1]/input', test_data["dst_name"][i])
+        tool.fill_action('//form/div[4]/div[1]/input', test_data["dst_name"][i], 'dst volume name test box')
 
         # select Sync mode
         if test_data["sync_mode"][i] == 'Async':
-            tool.click_action('//form/div[5]/div[1]/select/option[1]')
+            tool.click_action('//form/div[5]/div[1]/select/option[1]', 'sync mode drop down box')
         elif test_data["sync_mode"][i] == 'Semi-Sync':
-            tool.click_action('//form/div[5]/div[1]/select/option[2]')
+            tool.click_action('//form/div[5]/div[1]/select/option[2]', 'sync mode drop down box')
         elif test_data["sync_mode"][i] == 'Sync':
-            tool.click_action('//form/div[5]/div[1]/select/option[3]')
+            tool.click_action('//form/div[5]/div[1]/select/option[3]', 'sync mode drop down box')
 
         # submit
-        tool.click_action('//div[3]/div/div/div[2]/div[2]/button[1]')
+        tool.click_action('//div[3]/div/div/div[2]/div[2]/button[1]', 'submit button')
 
         # confirm
-        tool.click_action('/html/body/div[1]/div/div/div/form/div[3]/button[1]')
+        tool.click_action('/html/body/div[1]/div/div/div/form/div[3]/button[1]', 'confirm button')
 
         time.sleep(5)
 
     # check replication list information
     tolog('check replication list information\r\n')
 
-    replica_request = server.webapi('get', 'replica')
+    try:
+        replica_request = server.webapi('get', 'replica')
 
-    if isinstance(replica_request, dict):
+        if isinstance(replica_request, dict):
 
-        replica_info = json.loads(replica_request["text"])
+            replica_info = json.loads(replica_request["text"])
 
-        for key in replication_data.keys():
+            for key in replication_data.keys():
 
-            if replication_data[key][0] != replica_info[-1][key]:
+                if replication_data[key][0] != replica_info[-1][key]:
 
-                tolog(key + ': ' + str(replication_data[key][0]) + ' != ' + str(replica_info[-1][key]) + '\r\n')
-                tool.FailFlag = True
+                    tolog(key + ': ' + str(replication_data[key][0]) + ' != ' + str(replica_info[-1][key]) + '\r\n')
+                    tool.FailFlag = True
+    except Exception as e:
+        tolog(e.message)
 
     # check source volume and destination volume info
     tolog('check source volume and destination volume info\r\n')
 
-    # source volume info
-    vol2_request = server.webapi('get', 'volume/2')
-    vol2_info = json.loads(vol2_request["text"])[0]
+    try:
+        # source volume info
+        vol2_request = server.webapi('get', 'volume/2')
+        vol2_info = json.loads(vol2_request["text"])[0]
 
-    # destination volume info
-    vol6_request = server.webapi('get', 'volume/6')
-    vol6_info = json.loads(vol6_request["text"])[0]
+        # destination volume info
+        vol6_request = server.webapi('get', 'volume/6')
+        vol6_info = json.loads(vol6_request["text"])[0]
 
-    for k in volume_data:
+    except Exception as e:
 
-        if vol2_info[k] != vol6_info[k]:
+        tolog(e.message)
 
-            tolog(k + vol2_info[k] + ' != ' + vol6_info[k] + '\r\n')
-            tool.FailFlag = True
+    else:
+
+        for k in volume_data:
+
+            if vol2_info[k] != vol6_info[k]:
+
+                tolog(k + vol2_info[k] + ' != ' + vol6_info[k] + '\r\n')
+                tool.FailFlag = True
 
     tool.mark_status()
-
-    tool.finished()
-
-    clean_up_environment()
 
     return tool.FailFlag
 
 
-if __name__ == "__main__":
+def pause_resume_replication():
 
+    # select the one replication
+    tool.click_action('//table/tbody/tr[2]/td[1]/span/span')
+
+    # click Pause button
+    tool.click_action('//pr-button-bar/div/div/div/button[2]')
+
+    checkpoint = tool.driver.find_element_by_xpath()
+
+    if 'Failed to pause replication' in checkpoint:
+
+        tool.FailFlag = True
+
+
+def stop_replication():
+    pass
+
+
+if __name__ == "__main__":
+    clean_up_environment()
     add_replication()
+    # pause_resume_replication()
+    # stop_replication()

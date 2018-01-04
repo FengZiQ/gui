@@ -1,3 +1,568 @@
+2018-01-04 16:16:39: 'result': 'f'
+2018-01-04 16:16:38: check source volume and destination volume info
+
+2018-01-04 16:16:38: dst_id: 6 != 7
+
+2018-01-04 16:16:38: sync_mode: Async != Semi-Sync
+
+2018-01-04 16:16:38: dst_name: 1 != T2
+
+2018-01-04 16:16:38: src_id: 2 != 3
+
+2018-01-04 16:16:38: src_name: T_replication_vol_2 != T_replication_vol_3
+
+2018-01-04 16:16:38: description: Ready. != Syncing.
+
+2018-01-04 16:16:38: status: OK != Syncing
+
+2018-01-04 16:16:38: check replication list information
+
+2018-01-04 16:16:33: click confirm button is failed
+
+2018-01-04 16:16:33: click submit button is failed
+
+2018-01-04 16:16:27: click  is failed
+
+2018-01-04 16:16:26: click Add button is failed
+
+2018-01-04 16:16:21: click confirm button is failed
+
+2018-01-04 16:16:21: click submit button is failed
+
+2018-01-04 16:16:15: click source volume drop down box is failed
+
+2018-01-04 16:16:15: click  is failed
+
+2018-01-04 16:09:27: 'result': 'p'
+2018-01-04 16:09:27: list index out of range
+2018-01-04 16:09:27: check source volume and destination volume info
+
+2018-01-04 16:09:27: list index out of range
+2018-01-04 16:09:27: check replication list information
+
+2018-01-04 16:09:22: click confirm button is failed
+
+2018-01-04 16:09:22: click submit button is failed
+
+2018-01-04 16:09:22: fill out dst volume name test box is failed
+
+2018-01-04 16:09:21: click destination pool drop down box is failed
+
+2018-01-04 16:09:21: click source volume drop down box is failed
+
+2018-01-04 16:09:21: click  is failed
+
+2018-01-04 16:09:21: click Add button is failed
+
+2018-01-04 16:09:16: click confirm button is failed
+
+2018-01-04 16:09:16: click submit button is failed
+
+2018-01-04 16:09:16: click sync mode drop down box is failed
+
+2018-01-04 16:09:16: fill out dst volume name test box is failed
+
+2018-01-04 16:09:16: click destination pool drop down box is failed
+
+2018-01-04 16:09:16: click source volume drop down box is failed
+
+2018-01-04 16:09:16: click  is failed
+
+2018-01-04 16:09:16: click Add button is failed
+
+2018-01-04 16:09:11: click confirm button is failed
+
+2018-01-04 16:09:11: click submit button is failed
+
+2018-01-04 16:09:11: click sync mode drop down box is failed
+
+2018-01-04 16:09:11: fill out dst volume name test box is failed
+
+2018-01-04 16:09:11: click destination pool drop down box is failed
+
+2018-01-04 16:09:11: click source volume drop down box is failed
+
+2018-01-04 16:09:11: click source pool drop down box is failed
+
+2018-01-04 16:09:11: click Add button is failed
+
+2018-01-04 16:09:06: click confirm button is failed
+
+2018-01-04 16:09:06: click submit button is failed
+
+2018-01-04 16:09:06: click sync mode drop down box is failed
+
+2018-01-04 16:09:06: fill out dst volume name test box is failed
+
+2018-01-04 16:09:06: click destination pool drop down box is failed
+
+2018-01-04 16:09:06: click source volume drop down box is failed
+
+2018-01-04 16:09:06: click source pool drop down box is failed
+
+2018-01-04 16:09:05: click Add button is failed
+
+2018-01-04 16:09:04: click Replication button is failed
+
+2018-01-04 16:06:04: 'result': 'p'
+2018-01-04 16:06:04: list index out of range
+2018-01-04 16:06:03: check source volume and destination volume info
+
+2018-01-04 16:06:03: list index out of range
+2018-01-04 16:06:03: check replication list information
+
+2018-01-04 16:05:58: click confirm button is failed
+
+2018-01-04 16:05:58: click submit button is failed
+
+2018-01-04 16:05:58: fill out dst volume name test box is failed
+
+2018-01-04 16:05:58: click destination pool drop down box is failed
+
+2018-01-04 16:05:58: click source volume drop down box is failed
+
+2018-01-04 16:05:58: click  is failed
+
+2018-01-04 16:05:58: click Add button is failed
+
+2018-01-04 16:05:53: click confirm button is failed
+
+2018-01-04 16:05:53: click submit button is failed
+
+2018-01-04 16:05:53: click sync mode drop down box is failed
+
+2018-01-04 16:05:53: fill out dst volume name test box is failed
+
+2018-01-04 16:05:53: click destination pool drop down box is failed
+
+2018-01-04 16:05:53: click source volume drop down box is failed
+
+2018-01-04 16:05:53: click  is failed
+
+2018-01-04 16:05:53: click Add button is failed
+
+2018-01-04 16:05:48: click confirm button is failed
+
+2018-01-04 16:05:48: click submit button is failed
+
+2018-01-04 16:05:48: click sync mode drop down box is failed
+
+2018-01-04 16:05:48: fill out dst volume name test box is failed
+
+2018-01-04 16:05:48: click destination pool drop down box is failed
+
+2018-01-04 16:05:48: click source volume drop down box is failed
+
+2018-01-04 16:05:48: click source pool drop down box is failed
+
+2018-01-04 16:05:48: click Add button is failed
+
+2018-01-04 16:05:43: click confirm button is failed
+
+2018-01-04 16:05:43: click submit button is failed
+
+2018-01-04 16:05:43: click sync mode drop down box is failed
+
+2018-01-04 16:05:42: fill out dst volume name test box is failed
+
+2018-01-04 16:05:42: click destination pool drop down box is failed
+
+2018-01-04 16:05:42: click source volume drop down box is failed
+
+2018-01-04 16:05:41: click source pool drop down box is failed
+
+2018-01-04 16:05:40: click Add button is failed
+
+2018-01-04 16:05:40: click Replication button is failed
+
+2018-01-04 16:03:39: 'result': 'p'
+2018-01-04 16:03:39: list index out of range
+2018-01-04 16:03:39: check source volume and destination volume info
+
+2018-01-04 16:03:38: list index out of range
+2018-01-04 16:03:38: check replication list information
+
+2018-01-04 16:03:33: click confirm button is failed
+
+2018-01-04 16:03:33: click submit button is failed
+
+2018-01-04 16:03:33: fill out dst volume name test box is failed
+
+2018-01-04 16:03:33: click destination pool drop down box is failed
+
+2018-01-04 16:03:33: click source volume drop down box is failed
+
+2018-01-04 16:03:33: click  is failed
+
+2018-01-04 16:03:33: click Add button is failed
+
+2018-01-04 16:03:28: click confirm button is failed
+
+2018-01-04 16:03:28: click submit button is failed
+
+2018-01-04 16:03:28: click sync mode drop down box is failed
+
+2018-01-04 16:03:28: fill out dst volume name test box is failed
+
+2018-01-04 16:03:28: click destination pool drop down box is failed
+
+2018-01-04 16:03:28: click source volume drop down box is failed
+
+2018-01-04 16:03:28: click  is failed
+
+2018-01-04 16:03:28: click Add button is failed
+
+2018-01-04 16:03:23: click confirm button is failed
+
+2018-01-04 16:03:23: click submit button is failed
+
+2018-01-04 16:03:23: click sync mode drop down box is failed
+
+2018-01-04 16:03:23: fill out dst volume name test box is failed
+
+2018-01-04 16:03:23: click destination pool drop down box is failed
+
+2018-01-04 16:03:23: click source volume drop down box is failed
+
+2018-01-04 16:03:23: click source pool drop down box is failed
+
+2018-01-04 16:03:23: click Add button is failed
+
+2018-01-04 16:03:18: click confirm button is failed
+
+2018-01-04 16:03:18: click submit button is failed
+
+2018-01-04 16:03:18: click sync mode drop down box is failed
+
+2018-01-04 16:03:18: fill out dst volume name test box is failed
+
+2018-01-04 16:03:17: click destination pool drop down box is failed
+
+2018-01-04 16:03:16: click source volume drop down box is failed
+
+2018-01-04 16:03:16: click source pool drop down box is failed
+
+2018-01-04 16:03:16: click Add button is failed
+
+2018-01-04 16:03:16: click Replication button is failed
+
+2018-01-04 16:00:42: 'result': 'p'
+2018-01-04 16:00:42: list index out of range
+2018-01-04 16:00:42: check source volume and destination volume info
+
+2018-01-04 16:00:42: list index out of range
+2018-01-04 16:00:42: check replication list information
+
+2018-01-04 16:00:37: click confirm button is failed
+
+2018-01-04 16:00:37: click submit button is failed
+
+2018-01-04 16:00:37: fill out dst volume name test box is failed
+
+2018-01-04 16:00:37: click destination pool drop down box is failed
+
+2018-01-04 16:00:37: click source volume drop down box is failed
+
+2018-01-04 16:00:37: click  is failed
+
+2018-01-04 16:00:37: click Add button is failed
+
+2018-01-04 16:00:32: click confirm button is failed
+
+2018-01-04 16:00:32: click submit button is failed
+
+2018-01-04 16:00:32: click sync mode drop down box is failed
+
+2018-01-04 16:00:32: fill out dst volume name test box is failed
+
+2018-01-04 16:00:32: click destination pool drop down box is failed
+
+2018-01-04 16:00:32: click source volume drop down box is failed
+
+2018-01-04 16:00:32: click  is failed
+
+2018-01-04 16:00:32: click Add button is failed
+
+2018-01-04 16:00:26: click confirm button is failed
+
+2018-01-04 16:00:26: click submit button is failed
+
+2018-01-04 16:00:26: click sync mode drop down box is failed
+
+2018-01-04 16:00:26: fill out dst volume name test box is failed
+
+2018-01-04 16:00:26: click destination pool drop down box is failed
+
+2018-01-04 16:00:26: click source volume drop down box is failed
+
+2018-01-04 16:00:26: click source pool drop down box is failed
+
+2018-01-04 16:00:26: click Add button is failed
+
+2018-01-04 16:00:21: click confirm button is failed
+
+2018-01-04 16:00:21: click submit button is failed
+
+2018-01-04 16:00:21: click sync mode drop down box is failed
+
+2018-01-04 16:00:21: fill out dst volume name test box is failed
+
+2018-01-04 16:00:21: click destination pool drop down box is failed
+
+2018-01-04 16:00:21: click source volume drop down box is failed
+
+2018-01-04 16:00:21: click source pool drop down box is failed
+
+2018-01-04 16:00:21: click Add button is failed
+
+2018-01-04 16:00:19: click Replication button is failed
+
+2018-01-04 15:56:45: click submit button is failed
+
+2018-01-04 15:56:44: click submit button is failed
+
+2018-01-04 15:56:42: click submit button is failed
+
+2018-01-04 15:56:41: click submit button is failed
+
+2018-01-04 15:56:40: click submit button is failed
+
+2018-01-04 15:56:39: click submit button is failed
+
+2018-01-04 15:56:38: click submit button is failed
+
+2018-01-04 15:56:37: click submit button is failed
+
+2018-01-04 15:56:36: click submit button is failed
+
+2018-01-04 15:56:35: click submit button is failed
+
+2018-01-04 15:56:34: click submit button is failed
+
+2018-01-04 15:56:33: click submit button is failed
+
+2018-01-04 15:56:32: click submit button is failed
+
+2018-01-04 15:56:31: click destination pool drop down box is failed
+
+2018-01-04 15:56:30: click destination pool drop down box is failed
+
+2018-01-04 15:56:29: click destination pool drop down box is failed
+
+2018-01-04 15:56:28: click destination pool drop down box is failed
+
+2018-01-04 15:56:27: click destination pool drop down box is failed
+
+2018-01-04 15:56:26: click destination pool drop down box is failed
+
+2018-01-04 15:56:25: click destination pool drop down box is failed
+
+2018-01-04 15:56:24: click destination pool drop down box is failed
+
+2018-01-04 15:56:22: click destination pool drop down box is failed
+
+2018-01-04 15:56:21: click destination pool drop down box is failed
+
+2018-01-04 15:56:20: click destination pool drop down box is failed
+
+2018-01-04 15:56:19: click destination pool drop down box is failed
+
+2018-01-04 15:56:18: click destination pool drop down box is failed
+
+2018-01-04 15:56:17: click destination pool drop down box is failed
+
+2018-01-04 15:56:16: click destination pool drop down box is failed
+
+2018-01-04 15:56:15: click destination pool drop down box is failed
+
+2018-01-04 15:56:14: click destination pool drop down box is failed
+
+2018-01-04 15:56:13: click destination pool drop down box is failed
+
+2018-01-04 15:56:12: click destination pool drop down box is failed
+
+2018-01-04 15:56:11: click destination pool drop down box is failed
+
+2018-01-04 15:56:10: click destination pool drop down box is failed
+
+2018-01-04 15:56:09: click destination pool drop down box is failed
+
+2018-01-04 15:56:08: click destination pool drop down box is failed
+
+2018-01-04 15:56:07: click destination pool drop down box is failed
+
+2018-01-04 15:56:06: click destination pool drop down box is failed
+
+2018-01-04 15:56:05: click destination pool drop down box is failed
+
+2018-01-04 15:56:04: click destination pool drop down box is failed
+
+2018-01-04 15:56:03: click destination pool drop down box is failed
+
+2018-01-04 15:56:02: click destination pool drop down box is failed
+
+2018-01-04 15:56:01: click destination pool drop down box is failed
+
+2018-01-04 15:55:57: click Replication button is failed
+
+2018-01-04 15:54:49: 'result': 'p'
+2018-01-04 15:54:49: list index out of range
+2018-01-04 15:54:49: check source volume and destination volume info
+
+2018-01-04 15:54:49: list index out of range
+2018-01-04 15:54:49: check replication list information
+
+2018-01-04 15:30:28: 'result': 'f'
+2018-01-04 15:30:27: check source volume and destination volume info
+
+2018-01-04 15:30:27: description: Ready. != Syncing.
+
+2018-01-04 15:30:27: status: OK != Syncing
+
+2018-01-04 15:30:27: check replication list information
+
+2018-01-04 15:30:22: click confirm button is failed
+
+2018-01-04 15:30:13: click  is failed
+
+2018-01-04 15:30:13: click Add button is failed
+
+2018-01-04 15:29:57: click source volume drop down box is failed
+
+2018-01-04 15:29:57: click  is failed
+
+2018-01-04 15:29:50: click confirm button is failed
+
+2018-01-04 15:29:49: click submit button is failed
+
+2018-01-04 15:29:38: click Add button is failed
+
+2018-01-04 15:26:59: check replication list information
+
+2018-01-04 15:18:44: check source volume and destination volume info
+
+2018-01-04 15:18:44: list index out of range
+2018-01-04 15:18:44: check replication list information
+
+2018-01-04 15:14:55: check replication list information
+
+2018-01-04 15:14:50: click confirm button is failed
+
+2018-01-04 15:14:50: click submit button is failed
+
+2018-01-04 15:14:48: click destination pool drop down box is failed
+
+2018-01-04 15:14:45: click  is failed
+
+2018-01-04 15:14:45: click Add button is failed
+
+2018-01-04 15:14:40: click confirm button is failed
+
+2018-01-04 15:14:40: click submit button is failed
+
+2018-01-04 15:14:36: click destination pool drop down box is failed
+
+2018-01-04 15:14:36: click source volume drop down box is failed
+
+2018-01-04 15:14:36: click  is failed
+
+2018-01-04 15:14:36: click Add button is failed
+
+2018-01-04 15:14:31: click confirm button is failed
+
+2018-01-04 15:14:31: click submit button is failed
+
+2018-01-04 15:14:26: click destination pool drop down box is failed
+
+2018-01-04 15:14:22: click Add button is failed
+
+2018-01-04 15:14:17: click confirm button is failed
+
+2018-01-04 15:14:17: click submit button is failed
+
+2018-01-04 15:14:12: click destination pool drop down box is failed
+
+2018-01-04 14:19:48: check replication list information
+
+2018-01-04 14:19:43: click confirm button is failed
+
+2018-01-04 14:19:43: click submit button is failed
+
+2018-01-04 14:19:41: click destination pool drop down box is failed
+
+2018-01-04 14:19:39: click  is failed
+
+2018-01-04 14:19:39: click Add button is failed
+
+2018-01-04 14:19:34: click confirm button is failed
+
+2018-01-04 14:19:34: click submit button is failed
+
+2018-01-04 14:19:30: click destination pool drop down box is failed
+
+2018-01-04 14:19:30: click source volume drop down box is failed
+
+2018-01-04 14:19:30: click  is failed
+
+2018-01-04 14:19:30: click Add button is failed
+
+2018-01-04 14:19:25: click confirm button is failed
+
+2018-01-04 14:19:25: click submit button is failed
+
+2018-01-04 14:19:20: click destination pool drop down box is failed
+
+2018-01-04 14:19:16: click Add button is failed
+
+2018-01-04 14:19:11: click confirm button is failed
+
+2018-01-04 14:19:11: click submit button is failed
+
+2018-01-04 14:19:06: click destination pool drop down box is failed
+
+2018-01-04 14:17:06: check replication list information
+
+2018-01-04 14:17:01: click confirm button is failed
+
+2018-01-04 14:17:01: click submit button is failed
+
+2018-01-04 14:16:59: click destination pool drop down box is failed
+
+2018-01-04 14:16:57: click  is failed
+
+2018-01-04 14:16:57: click Add button is failed
+
+2018-01-04 14:16:52: click confirm button is failed
+
+2018-01-04 14:16:52: click submit button is failed
+
+2018-01-04 14:16:47: click destination pool drop down box is failed
+
+2018-01-04 14:16:47: click source volume drop down box is failed
+
+2018-01-04 14:16:47: click  is failed
+
+2018-01-04 14:16:47: click Add button is failed
+
+2018-01-04 14:16:42: click confirm button is failed
+
+2018-01-04 14:16:42: click submit button is failed
+
+2018-01-04 14:16:38: click destination pool drop down box is failed
+
+2018-01-04 14:16:33: click Add button is failed
+
+2018-01-04 14:16:28: click confirm button is failed
+
+2018-01-04 14:16:28: click submit button is failed
+
+2018-01-04 14:16:24: click destination pool drop down box is failed
+
+2018-01-04 11:11:42: 'result': 'p'
+2018-01-04 11:11:42: check source volume and destination volume info
+
+2018-01-04 11:11:42: check replication list information
+
 2018-01-03 17:44:06: 'result': 'f'
 2018-01-03 17:44:06: check source volume and destination volume info
 

@@ -22,29 +22,48 @@ class GUITestTool(object):
         self.driver.get(base_url)
         self.driver.find_element_by_name("username").send_keys(user)
         self.driver.find_element_by_name("password").send_keys(password)
-        self.driver.find_element_by_xpath("//button[@type='submit']").click()
+        self.click_action("//button[@type='submit']", 'login button')
         time.sleep(3)
 
     def finished(self):
         self.driver.close()
 
-    def click_action(self, path):
-        self.driver.find_element_by_xpath(path).click()
-        time.sleep(2)
+    def click_action(self, path, location='', response_time=3):
 
-    def fill_action(self, path, value):
-        self.driver.find_element_by_xpath(path).clear()
-        self.driver.find_element_by_xpath(path).send_keys(value)
-        time.sleep(2)
+        try:
+            self.driver.find_element_by_xpath(path).click()
+            time.sleep(response_time)
+        except:
+            tolog('click ' + location + ' is failed\r\n')
 
-    def wait_for_element(self, locator, path):
+    def fill_action(self, path, value, location=''):
 
-        for i in range(30):
+        try:
+            self.driver.find_element_by_xpath(path).clear()
+            self.driver.find_element_by_xpath(path).send_keys(value)
+            time.sleep(1)
+        except:
+            tolog('fill out ' + location + ' is failed\r\n')
+
+    def element_text_assert(self, path, location='', expected_text=''):
+
+        try:
+            actual_text = self.driver.find_element_by_xpath(path).text
+            if actual_text != expected_text:
+                self.FailFlag = True
+                tolog('Expected: ' + expected_text + '\r\nActual: ' + actual_text + '\r\n')
+        except:
+            tolog(location + ' is not found\r\n')
+
+    def wait_for_element(self, path, location=''):
+
+        for i in range(10):
             try:
-                if self.driver.find_element(locator, path):
+                if self.driver.find_element_by_xpath(path):
                     break
-            except():
-                pass
+            except:
+                tolog(location + ' is not found\r\n')
+                break
             time.sleep(1)
         else:
             tolog('time out')
