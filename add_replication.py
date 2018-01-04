@@ -120,7 +120,7 @@ def clean_up_environment():
 
 def add_replication():
     # precondition
-    precondition()
+    # precondition()
 
     # test date
     test_data = {
@@ -143,7 +143,7 @@ def add_replication():
         "src_pool_name": ['T_replication_0', 'T_replication_0', 'T_replication_1', 'T_replication_1'],
         "status": ['OK', 'OK', 'OK', 'OK'],
         "sync_mode": ['Async', 'Semi-Sync', 'Sync', 'Sync'],
-        "total_capacity": [3999989760, 3999989760, 1000000000, 1000000000]
+        "total_capacity": [3999989760, 3999989760, 999997440, 999997440]
     }
     volume_data = [
         'total_capacity', 'adv_kind', 'sector', 'compress', 'ratio', 'thin_prov',
@@ -206,12 +206,26 @@ def add_replication():
 
             replica_info = json.loads(replica_request["text"])
 
-            for key in replication_data.keys():
+            for replica in replica_info:
 
-                if replication_data[key][0] != replica_info[-1][key]:
+                if replica["src_id"] == 2:
 
-                    tolog(key + ': ' + str(replication_data[key][0]) + ' != ' + str(replica_info[-1][key]) + '\r\n')
-                    tool.FailFlag = True
+                    for key in replication_data.keys():
+
+                        if replication_data[key][0] != replica[key]:
+
+                            tolog(key + ': ' + str(replication_data[key][0]) + ' != ' + str(replica[key]) + '\r\n')
+                            tool.FailFlag = True
+
+                elif replica["src_id"] == 4:
+
+                    for key in replication_data.keys():
+
+                        if replication_data[key][2] != replica[key]:
+
+                            tolog(key + ': ' + str(replication_data[key][2]) + ' != ' + str(replica[key]) + '\r\n')
+                            tool.FailFlag = True
+
     except Exception as e:
         tolog(e.message)
 
@@ -265,7 +279,7 @@ def stop_replication():
 
 
 if __name__ == "__main__":
-    clean_up_environment()
+
     add_replication()
     # pause_resume_replication()
     # stop_replication()

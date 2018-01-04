@@ -1,3 +1,142 @@
+2018-01-04 17:38:44: 'result': 'f'
+2018-01-04 17:38:43: check source volume and destination volume info
+
+2018-01-04 17:38:43: dst_id: 8 != 9
+
+2018-01-04 17:38:43: total_capacity: 1000000000 != 999997440
+
+2018-01-04 17:38:43: dst_name: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1 != _______________________________
+
+2018-01-04 17:38:43: dst_pool_name: T_replication_0 != T_replication_2
+
+2018-01-04 17:38:43: description: Ready. != Syncing.
+
+2018-01-04 17:38:43: status: OK != Syncing
+
+2018-01-04 17:38:43: check replication list information
+
+2018-01-04 17:37:28: to click  is failed
+
+2018-01-04 17:37:00: to click  is failed
+
+2018-01-04 17:19:42: 'result': 'f'
+2018-01-04 17:19:41: check source volume and destination volume info
+
+2018-01-04 17:19:41: src_pool_name: T_replication_0 != T_replication_1
+
+2018-01-04 17:19:41: dst_id: 6 != 9
+
+2018-01-04 17:19:41: sync_mode: Async != Sync
+
+2018-01-04 17:19:41: total_capacity: 3999989760 != 999997440
+
+2018-01-04 17:19:41: dst_name: 1 != _______________________________
+
+2018-01-04 17:19:41: src_id: 2 != 4
+
+2018-01-04 17:19:41: src_name: T_replication_vol_2 != T_replication_vol_4
+
+2018-01-04 17:19:41: dst_pool_name: T_replication_1 != T_replication_2
+
+2018-01-04 17:19:41: description: Ready. != Syncing.
+
+2018-01-04 17:19:41: status: OK != Syncing
+
+2018-01-04 17:19:41: check replication list information
+
+2018-01-04 17:19:22: to click  is failed
+
+2018-01-04 17:18:48: to click  is failed
+
+2018-01-04 17:16:16: to click Add button is failed
+
+2018-01-04 17:13:06: 'result': 'p'
+2018-01-04 17:13:05: check source volume and destination volume info
+
+2018-01-04 17:13:05: check replication list information
+
+2018-01-04 17:13:00: to click confirm button is failed
+
+2018-01-04 17:13:00: to click submit button is failed
+
+2018-01-04 17:12:52: to click  is failed
+
+2018-01-04 17:12:52: to click  is failed
+
+2018-01-04 17:12:52: to click Add button is failed
+
+2018-01-04 17:12:47: to click confirm button is failed
+
+2018-01-04 17:12:47: to click submit button is failed
+
+2018-01-04 17:12:40: to click source volume drop down box is failed
+
+2018-01-04 17:12:40: to click  is failed
+
+2018-01-04 17:12:40: to click  is failed
+
+2018-01-04 17:06:16: to click Add button is failed
+
+2018-01-04 17:06:11: to click confirm button is failed
+
+2018-01-04 17:06:11: to click submit button is failed
+
+2018-01-04 17:06:03: to click source volume drop down box is failed
+
+2018-01-04 17:06:03: to click  is failed
+
+2018-01-04 16:58:55: to click Add button is failed
+
+2018-01-04 16:58:50: to click confirm button is failed
+
+2018-01-04 16:58:50: to click submit button is failed
+
+2018-01-04 16:58:42: to click source volume drop down box is failed
+
+2018-01-04 16:58:42: to click  is failed
+
+2018-01-04 16:52:01: 'result': 'p'
+2018-01-04 16:52:01: check source volume and destination volume info
+
+2018-01-04 16:52:01: check replication list information
+
+2018-01-04 16:51:56: to click confirm button is failed
+
+2018-01-04 16:51:56: to click submit button is failed
+
+2018-01-04 16:51:50: to click  is failed
+
+2018-01-04 16:51:50: to click Add button is failed
+
+2018-01-04 16:51:45: to click confirm button is failed
+
+2018-01-04 16:51:45: to click submit button is failed
+
+2018-01-04 16:51:39: to click source volume drop down box is failed
+
+2018-01-04 16:51:39: to click  is failed
+
+2018-01-04 16:26:41: 'result': 'p'
+2018-01-04 16:26:40: check source volume and destination volume info
+
+2018-01-04 16:26:40: check replication list information
+
+2018-01-04 16:26:35: click confirm button is failed
+
+2018-01-04 16:26:35: click submit button is failed
+
+2018-01-04 16:26:28: click  is failed
+
+2018-01-04 16:26:28: click Add button is failed
+
+2018-01-04 16:26:23: click confirm button is failed
+
+2018-01-04 16:26:23: click submit button is failed
+
+2018-01-04 16:26:15: click source volume drop down box is failed
+
+2018-01-04 16:26:15: click  is failed
+
 2018-01-04 16:16:39: 'result': 'f'
 2018-01-04 16:16:38: check source volume and destination volume info
 

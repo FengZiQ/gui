@@ -34,7 +34,7 @@ class GUITestTool(object):
             self.driver.find_element_by_xpath(path).click()
             time.sleep(response_time)
         except:
-            tolog('click ' + location + ' is failed\r\n')
+            tolog('to click ' + location + ' is failed\r\n')
 
     def fill_action(self, path, value, location=''):
 
@@ -43,7 +43,7 @@ class GUITestTool(object):
             self.driver.find_element_by_xpath(path).send_keys(value)
             time.sleep(1)
         except:
-            tolog('fill out ' + location + ' is failed\r\n')
+            tolog('to fill out ' + location + ' is failed\r\n')
 
     def element_text_assert(self, path, location='', expected_text=''):
 
