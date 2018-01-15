@@ -47,38 +47,38 @@ def create_nas_share():
     }
 
     # click "NAS Share" button
-    tool.click_action('//div[2]/div[1]/ul/li[5]/a/span')
+    tool.click_action(By.XPATH, '//div[2]/div[1]/ul/li[5]/a/span')
 
     # create 4 nas share
     for i in range(len(test_data["pool_id"])):
 
         # click "Create New NAS Share" button
-        tool.click_action('/html/body/div[1]/div/div[3]/div[1]/div/div[2]/button')
+        tool.click_action(By.XPATH, '/html/body/div[1]/div/div[3]/div[1]/div/div[2]/button')
 
         # select target Pool
         if test_data["pool_id"] == "0":
-            tool.click_action('//form/div[1]/div/select/option[1]')
+            tool.click_action(By.XPATH, '//form/div[1]/div/select/option[1]')
         else:
-            tool.click_action('//form/div[1]/div/select/option[2]')
+            tool.click_action(By.XPATH, '//form/div[1]/div/select/option[2]')
 
         # filling Nas Share name
-        tool.fill_action('//form/div[2]/div[1]/input', test_data["name"][i])
+        tool.fill_action(By.XPATH, '//form/div[2]/div[1]/input', test_data["name"][i])
 
         if test_data["thin"][i] == 'Enabled':
             # Enable Thin Provision
-            tool.click_action('//form/div[3]/div/label/span')
+            tool.click_action(By.XPATH, '//form/div[3]/div/label/span')
 
         # select capacity unit
         if test_data["unit"] == "GB":
-            tool.click_action('//form/div[4]/div[1]/div/div[2]/select/option[1]')
+            tool.click_action(By.XPATH, '//form/div[4]/div[1]/div/div[2]/select/option[1]')
         else:
-            tool.click_action('//form/div[4]/div[1]/div/div[2]/select/option[2]')
+            tool.click_action(By.XPATH, '//form/div[4]/div[1]/div/div[2]/select/option[2]')
 
         # filling capacity
-        tool.fill_action('//form/div[4]/div[1]/div/div[2]/input', test_data["capacity"][i])
+        tool.fill_action(By.XPATH, '//form/div[4]/div[1]/div/div[2]/input', test_data["capacity"][i])
 
         # submit
-        tool.click_action('//div/div[3]/div/div/div[2]/div[2]/button[1]')
+        tool.click_action(By.XPATH, '//div/div[3]/div/div/div[2]/div[2]/button[1]')
 
         nas_info = server.webapi('get', 'nasshare/' + str(i))
 

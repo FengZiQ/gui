@@ -1417,3 +1417,56 @@ dst_id: 8 != 9
 check source volume and destination volume info
 
 'result': 'f'
+to click  is failed
+
+to click source volume drop down box is failed
+
+to click submit button is failed
+
+to click confirm button is failed
+
+to click Add button is failed
+
+to click  is failed
+
+to click submit button is failed
+
+to click confirm button is failed
+
+check replication list information
+
+check source volume and destination volume info
+
+'result': 'p'
+check replication list information
+
+status: OK != Syncing
+
+description: Ready. != Syncing.
+
+dst_pool_name: T_replication_0 != T_replication_2
+
+dst_name: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1 != _______________________________
+
+dst_id: 8 != 9
+
+check source volume and destination volume info
+
+'result': 'f'
+check replication list information
+
+status: OK != Syncing
+
+description: Ready. != Syncing.
+
+dst_name: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1 != _______________________________
+
+dst_id: 8 != 9
+
+check source volume and destination volume info
+
+'result': 'f'
+to click  is failed
+
+to click  is failed
+

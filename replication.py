@@ -120,7 +120,7 @@ def clean_up_environment():
 
 def add_replication():
     # precondition
-    # precondition()
+    precondition()
 
     # test date
     test_data = {
@@ -151,48 +151,51 @@ def add_replication():
     ]
 
     # click "Volume" button
-    tool.click_action('//div[2]/div[1]/ul/li[4]/a/span', 'Volume button')
+    tool.click_action(By.XPATH, '//div[2]/div[1]/ul/li[4]/a/span', 'Volume button')
 
     # click "Replication" button
-    tool.click_action('//div[3]/div/div/div/ul/li/ul/li[4]/a/span', 'Replication button')
+    tool.click_action(By.XPATH, '//div[3]/div/div/div/ul/li/ul/li[4]/a/span', 'Replication button')
 
     # create 4 replication
     for i in range(len(test_data["dst_name"])):
 
         # click "Add" button
-        tool.click_action('//pr-button-bar/div/div/div/button[1]', 'Add button')
+        tool.click_action(By.XPATH, '//pr-button-bar/div/div/div/button[1]', 'Add button')
 
         # select source pool
         if test_data["src_pool_name"][i] == "T_replication_0":
-            tool.click_action('//form/div[1]/div[1]/select/option[1]', 'source pool drop down box')
+            tool.click_action(By.XPATH, '//form/div[1]/div[1]/select/option[1]', 'source pool drop down box')
         elif test_data["src_pool_name"][i] == "T_replication_1":
-            tool.click_action('//form/div[1]/div[1]/select/option[2]' 'source pool drop down box')
+            tool.click_action(By.XPATH, '//form/div[1]/div[1]/select/option[2]', 'source pool drop down box')
 
         # select source volume
         if test_data["src_id"][i] == 2 or test_data["src_id"][i] == 3 or test_data["src_id"][i] == 5:
-            tool.click_action('//form/div[2]/div[1]/select/option[1]', 'source volume drop down box')
+            tool.click_action(By.XPATH, '//form/div[2]/div[1]/select/option[1]', 'source volume drop down box')
         elif test_data["src_id"][i] == 4:
-            tool.click_action('//form/div[2]/div[1]/select/option[2]', 'source volume drop down box')
+            tool.click_action(By.XPATH, '//form/div[2]/div[1]/select/option[2]', 'source volume drop down box')
 
         # select destination pool
-        tool.click_action('//form/div[3]/div[1]/select/option[3]', 'destination pool drop down box')
+        if i < 2:
+            tool.click_action(By.XPATH, '//form/div[3]/div[1]/select/option[3]', 'destination pool drop down box')
+        else:
+            tool.click_action(By.XPATH, '//form/div[3]/div[1]/select/option[2]', 'destination pool drop down box')
 
         # filling destination volume name
-        tool.fill_action('//form/div[4]/div[1]/input', test_data["dst_name"][i], 'dst volume name test box')
+        tool.fill_action(By.XPATH, '//form/div[4]/div[1]/input', test_data["dst_name"][i], 'dst volume name text box')
 
         # select Sync mode
         if test_data["sync_mode"][i] == 'Async':
-            tool.click_action('//form/div[5]/div[1]/select/option[1]', 'sync mode drop down box')
+            tool.click_action(By.XPATH, '//form/div[5]/div[1]/select/option[1]', 'sync mode drop down box')
         elif test_data["sync_mode"][i] == 'Semi-Sync':
-            tool.click_action('//form/div[5]/div[1]/select/option[2]', 'sync mode drop down box')
+            tool.click_action(By.XPATH, '//form/div[5]/div[1]/select/option[2]', 'sync mode drop down box')
         elif test_data["sync_mode"][i] == 'Sync':
-            tool.click_action('//form/div[5]/div[1]/select/option[3]', 'sync mode drop down box')
+            tool.click_action(By.XPATH, '//form/div[5]/div[1]/select/option[3]', 'sync mode drop down box')
 
         # submit
-        tool.click_action('//div[3]/div/div/div[2]/div[2]/button[1]', 'submit button')
+        tool.click_action(By.XPATH, '//div[3]/div/div/div[2]/div[2]/button[1]', 'submit button')
 
         # confirm
-        tool.click_action('/html/body/div[1]/div/div/div/form/div[3]/button[1]', 'confirm button')
+        tool.click_action(By.XPATH, '/html/body/div[1]/div/div/div/form/div[3]/button[1]', 'confirm button')
 
         time.sleep(5)
 
@@ -215,15 +218,6 @@ def add_replication():
                         if replication_data[key][0] != replica[key]:
 
                             tolog(key + ': ' + str(replication_data[key][0]) + ' != ' + str(replica[key]) + '\r\n')
-                            tool.FailFlag = True
-
-                elif replica["src_id"] == 4:
-
-                    for key in replication_data.keys():
-
-                        if replication_data[key][2] != replica[key]:
-
-                            tolog(key + ': ' + str(replication_data[key][2]) + ' != ' + str(replica[key]) + '\r\n')
                             tool.FailFlag = True
 
     except Exception as e:
@@ -256,16 +250,23 @@ def add_replication():
 
     tool.mark_status()
 
+    tool.finished()
+
     return tool.FailFlag
 
 
 def pause_resume_replication():
+    # click "Volume" button
+    tool.click_action(By.XPATH, '//div[2]/div[1]/ul/li[4]/a/span', 'Volume button')
+
+    # click "Replication" button
+    tool.click_action(By.XPATH, '//div[3]/div/div/div/ul/li/ul/li[4]/a/span', 'Replication button')
 
     # select the one replication
-    tool.click_action('//table/tbody/tr[2]/td[1]/span/span')
+    tool.click_action(By.XPATH, '//table/tbody/tr[2]/td[1]/span/span')
 
     # click Pause button
-    tool.click_action('//pr-button-bar/div/div/div/button[2]')
+    tool.click_action(By.XPATH, '//pr-button-bar/div/div/div/button[2]', 'Pause button')
 
     checkpoint = tool.driver.find_element_by_xpath()
 
@@ -275,11 +276,16 @@ def pause_resume_replication():
 
 
 def stop_replication():
-    pass
+
+    # fill out confirm text box
+    tool.fill_action(By.XPATH, '//form/div[2]/div/input', 'confirm', 'confirm text box')
+
+    # click Confirm button
+    tool.click_action(By.XPATH, '//form/div[3]/button[1]', 'Confirm button')
 
 
 if __name__ == "__main__":
 
-    add_replication()
-    # pause_resume_replication()
+    # add_replication()
+    pause_resume_replication()
     # stop_replication()

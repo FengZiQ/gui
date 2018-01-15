@@ -1,3 +1,56 @@
+2018-01-08 11:28:57: to click  is failed
+
+2018-01-08 11:28:57: to click  is failed
+
+2018-01-08 11:18:59: 'result': 'f'
+2018-01-08 11:18:58: check source volume and destination volume info
+
+2018-01-08 11:18:58: dst_id: 8 != 9
+
+2018-01-08 11:18:58: dst_name: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1 != _______________________________
+
+2018-01-08 11:18:58: description: Ready. != Syncing.
+
+2018-01-08 11:18:58: status: OK != Syncing
+
+2018-01-08 11:18:58: check replication list information
+
+2018-01-08 10:43:19: 'result': 'f'
+2018-01-08 10:43:18: check source volume and destination volume info
+
+2018-01-08 10:43:18: dst_id: 8 != 9
+
+2018-01-08 10:43:18: dst_name: t_1t_1t_1t_1t_1t_1t_1t_1t_1t_1 != _______________________________
+
+2018-01-08 10:43:18: dst_pool_name: T_replication_0 != T_replication_2
+
+2018-01-08 10:43:18: description: Ready. != Syncing.
+
+2018-01-08 10:43:18: status: OK != Syncing
+
+2018-01-08 10:43:18: check replication list information
+
+2018-01-08 10:34:50: 'result': 'p'
+2018-01-08 10:34:50: check source volume and destination volume info
+
+2018-01-08 10:34:50: check replication list information
+
+2018-01-08 10:34:45: to click confirm button is failed
+
+2018-01-08 10:34:45: to click submit button is failed
+
+2018-01-08 10:34:37: to click  is failed
+
+2018-01-08 10:34:37: to click Add button is failed
+
+2018-01-08 10:34:32: to click confirm button is failed
+
+2018-01-08 10:34:32: to click submit button is failed
+
+2018-01-08 10:34:24: to click source volume drop down box is failed
+
+2018-01-08 10:34:24: to click  is failed
+
 2018-01-04 17:38:44: 'result': 'f'
 2018-01-04 17:38:43: check source volume and destination volume info
 

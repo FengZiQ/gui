@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from to_log import tolog
 import time
 
@@ -28,38 +29,42 @@ class GUITestTool(object):
     def finished(self):
         self.driver.close()
 
-    def click_action(self, path, location='', response_time=3):
+    """
+    locator type: 
+    By.ID,By.NAME,By.CLASS_NAME,By.TAG_NAME,By.LINK_TEXT,By.PARTIAL_LINK_TEXT,By.XPATH,By.CSS_SELECTOR
+    """
+    def click_action(self, locator, path, location='', response_time=3):
 
         try:
-            self.driver.find_element_by_xpath(path).click()
+            self.driver.find_element(locator, path).click()
             time.sleep(response_time)
         except:
             tolog('to click ' + location + ' is failed\r\n')
 
-    def fill_action(self, path, value, location=''):
+    def fill_action(self, locator, path, value, location=''):
 
         try:
-            self.driver.find_element_by_xpath(path).clear()
-            self.driver.find_element_by_xpath(path).send_keys(value)
+            self.driver.find_element(locator, path).clear()
+            self.driver.find_element(locator, path).send_keys(value)
             time.sleep(1)
         except:
             tolog('to fill out ' + location + ' is failed\r\n')
 
-    def element_text_assert(self, path, location='', expected_text=''):
+    def element_text_assert(self, locator, path, location='', expected_text=''):
 
         try:
-            actual_text = self.driver.find_element_by_xpath(path).text
+            actual_text = self.driver.find_element(locator, path).text
             if actual_text != expected_text:
                 self.FailFlag = True
                 tolog('Expected: ' + expected_text + '\r\nActual: ' + actual_text + '\r\n')
         except:
             tolog(location + ' is not found\r\n')
 
-    def wait_for_element(self, path, location=''):
+    def wait_for_element(self, locator, path, location=''):
 
         for i in range(10):
             try:
-                if self.driver.find_element_by_xpath(path):
+                if self.driver.find_element(locator, path):
                     break
             except:
                 tolog(location + ' is not found\r\n')
